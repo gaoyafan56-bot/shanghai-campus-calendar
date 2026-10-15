@@ -151,9 +151,8 @@ def spa(school, today):
 
 
 def rendered_spa(school, mm):
-    """在无人值守 Chromium 中加载官网自己的公开 UI。
-    从 Vue 组件读取已渲染活动的公开字段，不读取 cookie、token 或登录信息。
-    如官网改版组件结构，则明确失败；绝不把解析失败当零场次。
+    """让官网自己解析公开加密响应，再从可见日历和悬浮表格读取。
+    不依赖生产版 Vue 已移除的调试属性，不读取凭证或硬编码密钥。
     """
     from playwright.sync_api import sync_playwright
     result = []
@@ -161,43 +160,41 @@ def rendered_spa(school, mm):
         browser = p.chromium.launch(headless=True)
         page = browser.new_page(locale='zh-CN', timezone_id='Asia/Shanghai')
         try:
-            # 三校同一公开系统；海洋从首页发现招聘日历链接。
-            url = SOURCES[school]
-            page.goto(url, wait_until='domcontentloaded', timeout=60000)
-            if school == '上海海洋大学':
-                link = page.locator('a[href*="xjh-list"]')
-                if not link.count():
-                    raise ValueError('海洋首页无法发现公开日历入口，保留首页链接')
-                page.goto(urllib.parse.urljoin(url, link.first.get_attribute('href')), wait_until='networkidle')
-            # 读取 CalendarGrid.props.events，可包含确认为空的数组。
-            def extract():
-                return page.evaluate('''() => {
-                  for (const el of document.querySelectorAll('.calendar-grid')) {
-                    let c=el.__vueParentComponent;
-                    for(let i=0;c && i<8;i++,c=c.parent) {
-                      if(Array.isArray(c.props?.events)) return c.props.events;
-                    }
-                  }
-                  return null;
-                }''')
-            page.wait_for_selector('.calendar-grid', timeout=30000)
-            page.wait_for_function("!document.querySelector('.loading-overlay')", timeout=30000)
-            for offset in (-1, 0, 1, 2):
-                if offset == -1:
-                    button = page.locator('.month-navigation button').first
-                else:
-                    button = page.locator('.month-navigation button').last
-                button.click()
+            origin = 'https://' + urllib.parse.urlparse(SOURCES[school]).netloc
+            # 四校同一公开系统中的宣讲、招聘会入口；逐场链接仍回退学校入口。
+            for route in ('xjh-list', 'fairs'):
+                page.goto(origin + '/home/recruit-info/' + route,
+                          wait_until='domcontentloaded', timeout=60000)
+                page.wait_for_selector('.calendar-grid', timeout=30000)
                 page.wait_for_function("!document.querySelector('.loading-overlay')", timeout=30000)
-                errors = page.locator('.error-message, .error-state, .el-alert--error')
-                if errors.count() and errors.first.is_visible():
-                    raise ValueError('官网日历报告加载失败')
-                items = extract()
-                if items is None:
-                    raise ValueError('官网日历组件字段已变化')
-                result.extend(items)
+                for offset in (-1, 0, 1, 2):
+                    nav = page.locator('.month-navigation button')
+                    (nav.first if offset == -1 else nav.last).click()
+                    page.wait_for_function("!document.querySelector('.loading-overlay')", timeout=30000)
+                    for cell in page.locator('.date-cell.has-events').all():
+                        label = cell.get_attribute('aria-label') or ''
+                        day = date(label)
+                        if not day or day[:7] not in mm:
+                            continue
+                        cell.hover()
+                        table_rows = page.locator('.el-popper:visible .el-table__body tbody tr')
+                        table_rows.first.wait_for(state='visible', timeout=10000)
+                        for row in table_rows.all():
+                            cells = row.locator('td')
+                            if cells.count() < 3:
+                                raise ValueError('公开日历悬浮表格列发生变化')
+                            start_time = cells.nth(0).inner_text().strip()
+                            title = cells.nth(1).inner_text().strip()
+                            venue = cells.nth(2).inner_text().strip()
+                            if not times(start_time) or not title:
+                                raise ValueError('公开日历活动缺少明确开始时间或名称')
+                            result.append(dict(hdrq=day, hdkssj=start_time, hdjssj='',
+                                hdmc=title, hddd=venue,
+                                hdlx='招聘会' if route=='fairs' else '宣讲会'))
         finally:
             browser.close()
+    if not result:
+        raise ValueError('动态日历未读取到可验证场次，暂不认定为零活动')
     return result
 
 
