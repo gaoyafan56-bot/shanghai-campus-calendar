@@ -151,50 +151,41 @@ def spa(school, today):
 
 
 def rendered_spa(school, mm):
-    """让官网自己解析公开加密响应，再从可见日历和悬浮表格读取。
-    不依赖生产版 Vue 已移除的调试属性，不读取凭证或硬编码密钥。
+    """加载学校自身公开 JS 模块解析其响应，不复制或硬编码密钥。
+    全新临时浏览器无登录信息；只调用官网日历所用的公开列表接口。
     """
     from playwright.sync_api import sync_playwright
     result = []
+    origin = 'https://' + urllib.parse.urlparse(SOURCES[school]).netloc
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         page = browser.new_page(locale='zh-CN', timezone_id='Asia/Shanghai')
         try:
-            origin = 'https://' + urllib.parse.urlparse(SOURCES[school]).netloc
-            # 四校同一公开系统中的宣讲、招聘会入口；逐场链接仍回退学校入口。
-            for route in ('xjh-list', 'fairs'):
-                page.goto(origin + '/home/recruit-info/' + route,
-                          wait_until='domcontentloaded', timeout=60000)
-                page.wait_for_selector('.calendar-grid', timeout=30000)
-                page.wait_for_function("!document.querySelector('.loading-overlay')", timeout=30000)
-                for offset in (-1, 0, 1, 2):
-                    nav = page.locator('.month-navigation button')
-                    (nav.first if offset == -1 else nav.last).click()
-                    page.wait_for_function("!document.querySelector('.loading-overlay')", timeout=30000)
-                    for cell in page.locator('.date-cell.has-events').all():
-                        label = cell.get_attribute('aria-label') or ''
-                        day = date(label)
-                        if not day or day[:7] not in mm:
-                            continue
-                        cell.hover()
-                        table_rows = page.locator('.el-popper:visible .el-table__body tbody tr')
-                        table_rows.first.wait_for(state='visible', timeout=10000)
-                        for row in table_rows.all():
-                            cells = row.locator('td')
-                            if cells.count() < 3:
-                                raise ValueError('公开日历悬浮表格列发生变化')
-                            start_time = cells.nth(0).inner_text().strip()
-                            title = cells.nth(1).inner_text().strip()
-                            venue = cells.nth(2).inner_text().strip()
-                            if not times(start_time) or not title:
-                                raise ValueError('公开日历活动缺少明确开始时间或名称')
-                            result.append(dict(hdrq=day, hdkssj=start_time, hdjssj='',
-                                hdmc=title, hddd=venue,
-                                hdlx='招聘会' if route=='fairs' else '宣讲会'))
+            page.goto(SOURCES[school], wait_until='domcontentloaded', timeout=60000)
+            script = page.locator('script[type="module"][src]').first.get_attribute('src')
+            if not script:
+                raise ValueError('官网公开应用模块入口发生变化')
+            last = dt.date.fromisoformat(mm[-1]+'-01')
+            end = last.replace(day=calendar.monthrange(last.year,last.month)[1]).isoformat()
+            for kind in (0, 1):
+                params = urllib.parse.urlencode(dict(s=mm[0]+'-01', e=end, t=kind))
+                body = page.evaluate("""async ({script, path}) => {
+                    const module = await import(script);
+                    const helper = Object.values(module).find(value =>
+                        value && typeof value.httpGetInvoke === 'function');
+                    if (!helper) throw new Error('官网公开请求辅助模块已变化');
+                    return await helper.httpGetInvoke(path);
+                }""", dict(script=urllib.parse.urljoin(origin,script),
+                            path='/CareerFairs/GetActivityList?'+params))
+                if body.get('code') != 0 or not isinstance(body.get('data'),dict):
+                    raise ValueError('官网公开日历未返回有效数据')
+                rows = body['data'].get('vo')
+                if not isinstance(rows,list):
+                    raise ValueError('官网公开日历字段发生变化')
+                result.extend(rows)
         finally:
             browser.close()
-    if not result:
-        raise ValueError('动态日历未读取到可验证场次，暂不认定为零活动')
+    logging.info('%s 公开日历原始场次：%d',school,len(result))
     return result
 
 
