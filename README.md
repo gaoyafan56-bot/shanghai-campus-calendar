@@ -4,9 +4,9 @@
 
 ## 当前交付状态（2026-10-15，北京时间）
 
-本地真实采集并验证：9 所高校、2,471 场；2026 年 10 月 709 场。上大、上理、上海海洋的公开接口返回加密内容，已提供官网动态页面兼容路径，但本机自动浏览器未能启动，尚未通过验证。华政指定日程页返回 `No Data`，无法取得逐场排期。页面明确显示这 4 校未更新，不以空数据冒充成功。
+本地真实采集并验证：9 所高校、2,471 场；2026 年 10 月 709 场。上大、上理、上海海洋的动态日历适配尚未通过线上验证，华政在 GitHub runner 中连接失败。页面明确显示这 4 校未更新，不以空数据冒充成功。
 
-仓库由用户创建为公开仓库（用户同意使用免费版 GitHub Pages）。GitHub 插件写入授权已实测成功，完整文件已提交 main 分支。Pages 尚需在仓库设置中选择 GitHub Actions，并验收首次部署；在部署成功之前，预计地址不代表已上线。
+仓库由用户创建为公开仓库（用户同意使用免费版 GitHub Pages）。GitHub 插件写入授权已实测成功，完整文件已提交 main 分支。Pages 已成功部署，并实测公网 HTTP 200。访问：https://gaoyafan56-bot.github.io/shanghai-campus-calendar/ 。首次发布记录：https://github.com/gaoyafan56-bot/shanghai-campus-calendar/actions/runs/38740656523 。该运行的 deploy 作业成功；update 因4校来源失败显示红色，符合降级发布设计。失败邮件通知开关仍需由用户在个人通知设置中开启。
 
 ## 一次性操作清单
 
@@ -39,7 +39,7 @@
 
 上大/上理/上外贸：只尝试公开招聘日历，绝不访问需要登录的逐场详情 API；详情回退官方列表。上海海洋回退官方首页。动态兼容路径使用学校网页自己的数据解析，不硬编码学校前端加密密钥。遇到要求登录/验证码时停止该校。
 
-上外/东华：分别调用公开宣讲会、招聘会接口并翻页，JSONP 用 JSON 解析，不能 eval。招聘会使用官网 `recruitment.html?wid=`，宣讲会用 `preaching.html?wid=`。
+上外/东华：分别调用公开宣讲会、招聘会接口并翻页，JSONP 用 JSON 解析，不能 eval。招聘会使用官网 `recruitment.html?wid=`，宣讲会：上外使用 `preaching.html?wid=`；东华已实测需加 `/page/` 前缀，使用 `page/preaching.html?wid=`，招聘会同样使用 `page/recruitment.html?wid=`。
 
 同济：公开接口已改为返回真实官方详情 URL（含 `tjjyzx.tongji.edu.cn`），优先采用返回 URL，不强套旧 `newsDetail.html?id=` 规则。
 
