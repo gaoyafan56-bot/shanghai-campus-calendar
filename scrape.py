@@ -316,28 +316,45 @@ def shiep():
 
 
 def ecupl():
+    """日程页为空时从官网招聘会公告正文采集，绝不使用新闻发布日期作举办日。"""
     school = '华东政法大学'
-    html = request(SOURCES[school])
-    if '<!-- No Data -->' in html:
-        raise ValueError('官方日程列表返回 No Data，暂未发现可验证的逐场排期')
-    soup = BeautifulSoup(html, 'html.parser')
-    links = {urllib.parse.urljoin(SOURCES[school],a['href']):a.get('title') or a.get_text(strip=True)
-             for a in soup.select('a[href*="/page.htm"]')}
-    if not links:
-        raise ValueError('华政日程页面结构需重新适配；保留官方日程入口')
+    url = 'https://jy.ecupl.edu.cn/16921/list.htm'
+    soup = BeautifulSoup(request(url),'html.parser')
+    links = {urllib.parse.urljoin(url,a['href']):a.get('title') or a.get_text(strip=True)
+             for a in soup.select('a[href*="/page.htm"]')
+             if re.search('邀请函|招聘会|双选会|招聘活动服务指南',a.get('title') or a.get_text())}
     rows = []
-    for url, title in links.items():
-        detail = BeautifulSoup(request(url),'html.parser')
+    for link,title in links.items():
+        detail = BeautifulSoup(request(link),'html.parser')
         content = detail.select_one('.wp_articlecontent')
         if not content:
-            raise ValueError('华政详情正文结构已变化')
+            continue
         text = content.get_text(' ',strip=True)
-        # 必须有明确活动时间标签，不使用列表上的新闻发布日期。
-        match = re.search(r'(?:活动时间|举办时间|宣讲时间|招聘时间|会议时间|时间)[：:]\s*(.{0,120})',text)
-        if not match or not date(match[1]) or not times(match[1]):
-            raise ValueError('华政排期正文未找到明确活动日期及开始时间')
-        place = re.search(r'(?:地点|场地)[：:]\s*([^。；;]{1,80})',text)
-        rows.append(event(school,match[1],match[1],'',title,place[1] if place else '',SOURCES[school]))
+        # 优先公告明确的活动时间行，避免后文报到时间和报名截止日期。
+        match = re.search(r'(?:活动时间|举办时间|时间)[：:]\s*(.{0,100})',text)
+        when = match[1] if match else ''
+        if not times(when):
+            # 学期服务指南中的首场招聘会单独有完整活动日期。
+            match = re.search(r'(20\d{2}年\s*\d+月\s*\d+日.{0,40}\d{1,2}:\d{2}[-－–]\d{1,2}:\d{2})',text)
+            when = match[1] if match else ''
+        if not when or not times(when):
+            continue
+        day = date(re.sub(r'\s+','',when))
+        if not day:
+            month_day = re.search(r'(\d{1,2})\s*月\s*(\d{1,2})\s*日',when)
+            year_match = re.search(r'/(20\d{2})/',link)
+            if not month_day or not year_match:
+                continue
+            year=int(year_match[1])
+            day=dt.date(year,int(month_day[1]),int(month_day[2])).isoformat()
+        place = re.search(r'(?:地点|场地)[：:]\s*(.{1,90}?)(?=0[2-9][.、]|二、|三、|$)',text)
+        venue = place[1].strip() if place else ''
+        if not venue:
+            match = re.search(r'在([^。]{1,50}?(?:体育馆|报告厅|教室))召开',text)
+            venue=match[1] if match else ''
+        rows.append(event(school,day,when,'',title,venue,link,'招聘会'))
+    if not rows:
+        raise ValueError('官网公告未提供可验证的活动日期及开始时间')
     return rows
 
 
@@ -379,6 +396,9 @@ def main():
     now = dt.datetime.now(TZ)
     cache = ROOT/'data/events.json'
     old = json.loads(cache.read_text()) if cache.exists() else []
+    supplement_path = ROOT/'data/supplements.json'
+    supplements = json.loads(supplement_path.read_text()) if supplement_path.exists() else []
+    old.extend(supplements)
     statusfile = ROOT/'data/status.json'
     prior = json.loads(statusfile.read_text()) if statusfile.exists() else {}
     states = prior.get('schools', {})
@@ -403,6 +423,8 @@ def main():
                     failed.append(school)
                     states[school] = dict(ok=False,count=0,last_success=states.get(school,{}).get('last_success'),error=public_error(exc))
                     logging.error('%s: %s；保留旧数据',school,exc)
+    for school in SOURCES:
+        states.setdefault(school, {})['supplement_count'] = sum(e['school']==school for e in supplements)
     failed = [school for school in SOURCES if not states.get(school,{}).get('ok')]
     records = sorted(merged.values(),key=lambda e:(e['d'],e['start'],e['school'],e['co']))
     status = dict(attempted_at=prior.get('attempted_at',now.isoformat()) if args.render_only else now.isoformat(),schools=states,sources=SOURCES,
