@@ -4,9 +4,9 @@
 
 ## 当前交付状态（2026-10-15，北京时间）
 
-本地真实采集并验证：9 所高校、2,471 场；2026 年 10 月 709 场。上大、上理、上海海洋的动态日历适配尚未通过线上验证，华政在 GitHub runner 中连接失败。页面明确显示这 4 校未更新，不以空数据冒充成功。
+重新核查后，上大163场、上理52场、上海海洋10场已通过GitHub运行实测；原有9校继续采集。华政官网公告已核实并补录3场，GitHub服务器访问该校仍返回HTTP 403，因此其自动更新尚未恢复。
 
-仓库由用户创建为公开仓库（用户同意使用免费版 GitHub Pages）。GitHub 插件写入授权已实测成功，完整文件已提交 main 分支。Pages 已成功部署，并实测公网 HTTP 200。访问：https://gaoyafan56-bot.github.io/shanghai-campus-calendar/ 。首次发布记录：https://github.com/gaoyafan56-bot/shanghai-campus-calendar/actions/runs/38740656523 。该运行的 deploy 作业成功；update 因4校来源失败显示红色，符合降级发布设计。失败邮件通知开关仍需由用户在个人通知设置中开启。
+仓库由用户创建为公开仓库（用户同意使用免费版 GitHub Pages）。GitHub 插件写入授权已实测成功，完整文件已提交 main 分支。Pages 已成功部署，并实测公网 HTTP 200。访问：https://gaoyafan56-bot.github.io/shanghai-campus-calendar/ 。首次发布记录：https://github.com/gaoyafan56-bot/shanghai-campus-calendar/actions/runs/38740656523 。该运行的 deploy 作业成功；update 在首次发布时因4校来源失败显示红色，符合降级发布设计。失败邮件通知开关仍需由用户在个人通知设置中开启。
 
 ## 一次性操作清单
 
@@ -91,3 +91,12 @@ python scrape.py
 - 定时触发与延迟限制：https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule
 - 配置应用仓库访问：https://docs.github.com/en/apps/using-github-apps/reviewing-and-modifying-installed-github-apps
 - Actions 通知：https://docs.github.com/en/actions/how-tos/monitor-workflows/notifications
+
+## 四校重新核查（2026-10-15）
+
+- 上海大学：公开日历接口已恢复采集163场；使用学校官网公开模块解析响应，不复制密钥、不登录。
+- 上海理工大学：同上，已实测52场。
+- 上海海洋大学：同上，已实测10场；活动链接按约定回退官网首页。
+- 华东政法大学：原日程列表为空，但官网通知公告提供可验证排期。本地读取成功，GitHub runner返回HTTP403。已补录9月23日13:30–15:30、10月20日09:00–16:30、11月4日13:30–15:30三场，官方原文链接保存在活动中；这些不能视为已恢复无人值守更新。
+
+补录文件data/supplements.json仅存已核实的活动字段和官方链接；每次更新合并去重，已结束记录保留。官网公告若能在runner中读取，采集器会继续尝试自动更新。缺失年份的11月4日活动按2026年9月30日公告上下文及周三日期核对，未将2027届毕业年份误作活动年份。
