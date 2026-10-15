@@ -1,83 +1,96 @@
 {
-  "attempted_at": "2026-10-15T21:12:19.154287+08:00",
+  "attempted_at": "2026-10-15T22:11:39.848691+08:00",
   "schools": {
     "华东师范大学": {
       "ok": true,
       "count": 113,
-      "last_success": "2026-10-15T21:12:19.154287+08:00",
-      "error": ""
+      "last_success": "2026-10-15T22:11:39.848691+08:00",
+      "error": "",
+      "supplement_count": 0
     },
     "华东理工大学": {
       "ok": true,
       "count": 210,
-      "last_success": "2026-10-15T21:12:19.154287+08:00",
-      "error": ""
+      "last_success": "2026-10-15T22:11:39.848691+08:00",
+      "error": "",
+      "supplement_count": 0
     },
     "同济大学": {
       "ok": true,
       "count": 338,
-      "last_success": "2026-10-15T21:12:19.154287+08:00",
-      "error": ""
+      "last_success": "2026-10-15T22:11:39.848691+08:00",
+      "error": "",
+      "supplement_count": 0
     },
     "上海交通大学": {
       "ok": true,
       "count": 261,
-      "last_success": "2026-10-15T21:12:19.154287+08:00",
-      "error": ""
+      "last_success": "2026-10-15T22:11:39.848691+08:00",
+      "error": "",
+      "supplement_count": 0
     },
     "东华大学": {
       "ok": true,
       "count": 173,
-      "last_success": "2026-10-15T21:12:19.154287+08:00",
-      "error": ""
+      "last_success": "2026-10-15T22:11:39.848691+08:00",
+      "error": "",
+      "supplement_count": 0
     },
     "上海大学": {
-      "ok": false,
-      "count": 0,
-      "last_success": null,
-      "error": "动态网页加载失败，本轮保留旧记录；详细原因见运行日志。"
+      "ok": true,
+      "count": 163,
+      "last_success": "2026-10-15T22:11:39.848691+08:00",
+      "error": "",
+      "supplement_count": 0
     },
     "上海理工大学": {
-      "ok": false,
-      "count": 0,
-      "last_success": null,
-      "error": "公开日历悬浮表格列发生变化"
+      "ok": true,
+      "count": 52,
+      "last_success": "2026-10-15T22:11:39.848691+08:00",
+      "error": "",
+      "supplement_count": 0
     },
     "上海海洋大学": {
-      "ok": false,
-      "count": 0,
-      "last_success": null,
-      "error": "公开日历悬浮表格列发生变化"
+      "ok": true,
+      "count": 10,
+      "last_success": "2026-10-15T22:11:39.848691+08:00",
+      "error": "",
+      "supplement_count": 0
     },
     "上海对外经贸大学": {
       "ok": true,
       "count": 20,
-      "last_success": "2026-10-15T21:12:19.154287+08:00",
-      "error": ""
+      "last_success": "2026-10-15T22:11:39.848691+08:00",
+      "error": "",
+      "supplement_count": 0
     },
     "上海电力大学": {
       "ok": true,
       "count": 147,
-      "last_success": "2026-10-15T21:12:19.154287+08:00",
-      "error": ""
+      "last_success": "2026-10-15T22:11:39.848691+08:00",
+      "error": "",
+      "supplement_count": 0
     },
     "上海财经大学": {
       "ok": true,
       "count": 100,
-      "last_success": "2026-10-15T21:12:19.154287+08:00",
-      "error": ""
+      "last_success": "2026-10-15T22:11:39.848691+08:00",
+      "error": "",
+      "supplement_count": 0
     },
     "华东政法大学": {
       "ok": false,
       "count": 0,
       "last_success": null,
-      "error": "官网连接失败，本轮保留旧记录；详细原因见运行日志。"
+      "error": "官网连接失败，本轮保留旧记录；详细原因见运行日志。",
+      "supplement_count": 3
     },
     "上海外国语大学": {
       "ok": true,
       "count": 1111,
-      "last_success": "2026-10-15T21:12:19.154287+08:00",
-      "error": ""
+      "last_success": "2026-10-15T22:11:39.848691+08:00",
+      "error": "",
+      "supplement_count": 0
     }
   },
   "sources": {
@@ -95,12 +108,12 @@
     "上海对外经贸大学": "https://job.suibe.edu.cn/home/recruit-info/xjh-list",
     "上海电力大学": "https://career.shiep.edu.cn/teachin"
   },
-  "total": 2471,
+  "total": 2699,
   "window": [
     "2026-09",
     "2026-10",
     "2026-11",
     "2026-12"
   ],
-  "run_url": "https://github.com/gaoyafan56-bot/shanghai-campus-calendar/actions/runs/38740656523"
+  "run_url": "https://github.com/gaoyafan56-bot/shanghai-campus-calendar/actions/runs/38749139225"
 }
