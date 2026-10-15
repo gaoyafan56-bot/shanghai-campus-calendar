@@ -47,3 +47,5 @@ jobs:
       - name: 发布界面
         id: deployment
         uses: actions/deploy-pages@v4
+
+# UI revision: simplified-copy-2026-10-15
