@@ -5,7 +5,7 @@
 已知规则：上大/上理/上外贸不调用登录详情接口，详情回退列表；
 上财列表必须带 nrdm=allxjh1，优先 POST /career/index/common/jyrl date=YYYY-MM；
 上交/华师/上财列表卡片缺日期，使用官网月历 JSON；若 JSON 无日期，不用发布日期冒充；
-上外/东华 preaching.html?wid=，华理 RecruitmentDetail.aspx?id=；
+上外 preaching.html?wid=；东华现为 page/preaching.html?wid=，华理 RecruitmentDetail.aspx?id=；
 同济历史规则 newsDetail.html?id=，现优先使用接口返回的官方详情 URL；
 上电 teachin/view/id/；华政回退日程列表；海洋 SPA 无逐场页，回退官网首页。
 所有请求只访问公开页面。遇到登录/验证码/无法解析时跳过、保留旧记录并报告。
@@ -212,7 +212,7 @@ def jsonp_school(school):
             for r in body['listData']:
                 rows.append(event(school, r.get('apkssj'), r.get('apkssj'), r.get('apjssj'),
                     r.get('zt') or r.get('zph') or r.get('yrdwname'), r.get('jbdd') or r.get('cdzdy'),
-                    base + ('/preaching.html?wid=' if kind=='宣讲会' else '/recruitment.html?wid=') + str(r['wid']), kind))
+                    base + ('/page/' if school=='东华大学' else '/') + ('preaching.html?wid=' if kind=='宣讲会' else 'recruitment.html?wid=') + str(r['wid']), kind))
             if page >= int(body.get('totalPages') or 0):
                 break
             page += 1
@@ -391,6 +391,9 @@ def main():
     statusfile = ROOT/'data/status.json'
     prior = json.loads(statusfile.read_text()) if statusfile.exists() else {}
     states = prior.get('schools', {})
+    for e in old:
+        if e['school'] == '东华大学':
+            e['link'] = e['link'].replace('ejob.dhu.edu.cn/preaching.html','ejob.dhu.edu.cn/page/preaching.html').replace('ejob.dhu.edu.cn/recruitment.html','ejob.dhu.edu.cn/page/recruitment.html')
     merged = {identity(e):e for e in old}
     failed = []
     if not args.render_only:
