@@ -10301,6 +10301,16 @@
   },
   {
     "d": "2025-11-10",
+    "start": "08:30",
+    "end": "11:00",
+    "co": "广东能源集团2026届校园招聘宣讲会杨浦校区专场",
+    "venue": "杨浦-小礼堂",
+    "school": "上海电力大学",
+    "type": "宣讲会",
+    "link": "https://career.shiep.edu.cn/teachin/view/id/110515"
+  },
+  {
+    "d": "2025-11-10",
     "start": "16:00",
     "end": "18:00",
     "co": "思格新能源校园宣讲会",
@@ -10308,6 +10318,16 @@
     "school": "上海外国语大学",
     "type": "宣讲会",
     "link": "https://career.shisu.edu.cn/preaching.html?wid=25110116391514112591"
+  },
+  {
+    "d": "2025-11-11",
+    "start": "09:00",
+    "end": "11:30",
+    "co": "山东能源新能源集团有限公司2026年秋季招聘",
+    "venue": "杨浦-行政中心9楼1号会议室",
+    "school": "上海电力大学",
+    "type": "宣讲会",
+    "link": "https://career.shiep.edu.cn/teachin/view/id/110517"
   },
   {
     "d": "2025-11-11",
@@ -10380,6 +10400,16 @@
     "link": "https://career.shisu.edu.cn/preaching.html?wid=25111301015486811351"
   },
   {
+    "d": "2025-11-25",
+    "start": "14:00",
+    "end": "",
+    "co": "亨嘉之会 通联未来  亨通集团2026届校园招聘",
+    "venue": "临港校区-学术楼307",
+    "school": "上海电力大学",
+    "type": "宣讲会",
+    "link": "https://career.shiep.edu.cn/teachin/view/id/110519"
+  },
+  {
     "d": "2025-11-26",
     "start": "18:30",
     "end": "20:30",
@@ -10388,6 +10418,16 @@
     "school": "上海外国语大学",
     "type": "宣讲会",
     "link": "https://career.shisu.edu.cn/preaching.html?wid=25110614514765118469"
+  },
+  {
+    "d": "2025-11-27",
+    "start": "14:00",
+    "end": "16:00",
+    "co": "思源电气股份有限公司",
+    "venue": "杨浦-行政中心9楼五号会议室",
+    "school": "上海电力大学",
+    "type": "宣讲会",
+    "link": "https://career.shiep.edu.cn/teachin/view/id/110520"
   },
   {
     "d": "2025-11-27",
@@ -10420,6 +10460,26 @@
     "link": "https://career.shisu.edu.cn/preaching.html?wid=25111414415751010246"
   },
   {
+    "d": "2025-12-02",
+    "start": "14:00",
+    "end": "16:00",
+    "co": "上海柳智科技股份有限公司",
+    "venue": "临港-学术楼301会议室",
+    "school": "上海电力大学",
+    "type": "宣讲会",
+    "link": "https://career.shiep.edu.cn/teachin/view/id/110518"
+  },
+  {
+    "d": "2025-12-02",
+    "start": "15:00",
+    "end": "16:30",
+    "co": "许昌智能继电器股份有限公司",
+    "venue": "杨浦-行政中心9楼5号会议室",
+    "school": "上海电力大学",
+    "type": "宣讲会",
+    "link": "https://career.shiep.edu.cn/teachin/view/id/110522"
+  },
+  {
     "d": "2025-12-09",
     "start": "14:00",
     "end": "16:30",
@@ -10450,6 +10510,16 @@
     "link": "https://career.shisu.edu.cn/preaching.html?wid=25120916395643214222"
   },
   {
+    "d": "2025-12-22",
+    "start": "10:00",
+    "end": "11:30",
+    "co": "贵州能源集团电力投资有限公司",
+    "venue": "杨浦-行政中心9楼1号会议室",
+    "school": "上海电力大学",
+    "type": "宣讲会",
+    "link": "https://career.shiep.edu.cn/teachin/view/id/110523"
+  },
+  {
     "d": "2025-12-24",
     "start": "15:00",
     "end": "16:00",
@@ -10471,6 +10541,26 @@
   },
   {
     "d": "2025-12-30",
+    "start": "13:00",
+    "end": "14:00",
+    "co": "易博智机器人（上海）有限公司",
+    "venue": "上海电力大学临港校区学术楼305",
+    "school": "上海电力大学",
+    "type": "宣讲会",
+    "link": "https://career.shiep.edu.cn/teachin/view/id/110530"
+  },
+  {
+    "d": "2025-12-30",
+    "start": "13:30",
+    "end": "14:00",
+    "co": "上海华申智能卡应用系统有限公司",
+    "venue": "上海电力大学临港校区学术楼305",
+    "school": "上海电力大学",
+    "type": "宣讲会",
+    "link": "https://career.shiep.edu.cn/teachin/view/id/110531"
+  },
+  {
+    "d": "2025-12-30",
     "start": "13:30",
     "end": "15:30",
     "co": "现场 上海电力大学2026届毕业生“人工智能”专场招聘会（人工智能学部、数理学院专场）",
@@ -10488,6 +10578,16 @@
     "school": "上海外国语大学",
     "type": "宣讲会",
     "link": "https://career.shisu.edu.cn/preaching.html?wid=25122217500471612187"
+  },
+  {
+    "d": "2026-03-02",
+    "start": "14:00",
+    "end": "16:00",
+    "co": "国网新疆电力有限公司",
+    "venue": "杨浦校区9楼1号会议室",
+    "school": "上海电力大学",
+    "type": "宣讲会",
+    "link": "https://career.shiep.edu.cn/teachin/view/id/110536"
   },
   {
     "d": "2026-03-04",
@@ -13968,6 +14068,16 @@
     "school": "华东理工大学",
     "type": "宣讲会",
     "link": "https://career.ecust.edu.cn/student/RecruitmentDetail.aspx?id=24079"
+  },
+  {
+    "d": "2026-09-18",
+    "start": "18:00",
+    "end": "",
+    "co": "上海宇量昇科技有限公司2027届招聘宣讲会",
+    "venue": "学生中心D200多功能厅",
+    "school": "上海交通大学",
+    "type": "宣讲会",
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/235062256516337664"
   },
   {
     "d": "2026-09-18",
@@ -19322,6 +19432,16 @@
   {
     "d": "2026-10-12",
     "start": "10:00",
+    "end": "",
+    "co": "深圳市属国企2027届“菁英聚鹏城”校园招聘上海交通大学专场",
+    "venue": "学生中心C204多功能厅",
+    "school": "上海交通大学",
+    "type": "宣讲会",
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/245338666912845824"
+  },
+  {
+    "d": "2026-10-12",
+    "start": "10:00",
     "end": "11:30",
     "co": "无锡奥特维科技股份有限公司",
     "venue": "宣讲教室：宝山校区A112，面试教室：宝山校区A218（下午一点到晚上九点）",
@@ -23183,6 +23303,16 @@
     "d": "2026-10-19",
     "start": "10:00",
     "end": "",
+    "co": "“北京欢迎你”——北京市2026年秋季高校毕业生专场招聘活动（上海交通大学站）",
+    "venue": "学生中心D200多功能厅",
+    "school": "上海交通大学",
+    "type": "宣讲会",
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/252760053092847616"
+  },
+  {
+    "d": "2026-10-19",
+    "start": "10:00",
+    "end": "",
     "co": "中国电子科技集团公司第十研究所 2027 届秋季校园招聘宣讲会",
     "venue": "学生中心B205多功能厅",
     "school": "上海交通大学",
@@ -23338,16 +23468,6 @@
     "school": "东华大学",
     "type": "宣讲会",
     "link": "https://ejob.dhu.edu.cn/page/preaching.html?wid=6bc5e7cfed5c467cab17f9bc833bf298"
-  },
-  {
-    "d": "2026-10-19",
-    "start": "14:00",
-    "end": "16:00",
-    "co": "格雷博 2027 届 秋季校园招聘",
-    "venue": "松2125",
-    "school": "东华大学",
-    "type": "宣讲会",
-    "link": "https://ejob.dhu.edu.cn/page/preaching.html?wid=81f50dfeb04644ac8498f5ed9798ed6e"
   },
   {
     "d": "2026-10-19",
@@ -23801,6 +23921,16 @@
   },
   {
     "d": "2026-10-20",
+    "start": "10:00",
+    "end": "11:00",
+    "co": "重庆市公安局",
+    "venue": "四平校区-中法中心C301",
+    "school": "同济大学",
+    "type": "宣讲会",
+    "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=40280386275089c4012764bc96ae0012;xjhbh=5E2BA4DB2DE9580FE0632084A8C032AD#/xjhxq"
+  },
+  {
+    "d": "2026-10-20",
     "start": "10:30",
     "end": "12:00",
     "co": "“城建未来”育人共同体专场双选会",
@@ -24203,6 +24333,16 @@
     "d": "2026-10-20",
     "start": "18:00",
     "end": "",
+    "co": "上海矩量光启计算技术有限公司2027届校园招聘",
+    "venue": "学生中心B205多功能厅",
+    "school": "上海交通大学",
+    "type": "宣讲会",
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/241616127569039360"
+  },
+  {
+    "d": "2026-10-20",
+    "start": "18:00",
+    "end": "",
     "co": "天合光能2027届旭日计划招聘宣讲会",
     "venue": "学生中心C204多功能厅",
     "school": "上海交通大学",
@@ -24462,6 +24602,16 @@
   {
     "d": "2026-10-20",
     "start": "18:30",
+    "end": "",
+    "co": "浙江省杭州第二中学校园宣讲会【面试】",
+    "venue": "闵行校区 闵二教225(30人|多媒体教室),闵行校区 闵二教220(54人|多媒体教室)，闵行校区 闵二教229(86人|多媒体教室)",
+    "school": "华东师范大学",
+    "type": "宣讲会",
+    "link": "https://career.ecnu.edu.cn/career/xjhxx/view/252435417574543360"
+  },
+  {
+    "d": "2026-10-20",
+    "start": "18:30",
     "end": "20:30",
     "co": "上海我们方田科技有限公司宣讲会",
     "venue": "研究生楼604",
@@ -24521,6 +24671,26 @@
   },
   {
     "d": "2026-10-21",
+    "start": "09:00",
+    "end": "12:00",
+    "co": "国投钦州发电有限公司2026年秋季校园招聘宣讲会",
+    "venue": "临港-学术楼303会议室",
+    "school": "上海电力大学",
+    "type": "宣讲会",
+    "link": "https://career.shiep.edu.cn/teachin/view/id/110649"
+  },
+  {
+    "d": "2026-10-21",
+    "start": "09:00",
+    "end": "11:30",
+    "co": "重庆市公安局",
+    "venue": "嘉定校区-济人楼310",
+    "school": "同济大学",
+    "type": "宣讲会",
+    "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=40280386275089c4012764bc96ae0012;xjhbh=5E405A1FA2BD1644E0631F84A8C057F2#/xjhxq"
+  },
+  {
+    "d": "2026-10-21",
     "start": "09:30",
     "end": "11:30",
     "co": "国家电网有限公司直属单位2027年高校毕业生招聘校园宣讲",
@@ -24568,6 +24738,16 @@
     "school": "华东师范大学",
     "type": "宣讲会",
     "link": "https://career.ecnu.edu.cn/career/xjhxx/view/250541599761764352"
+  },
+  {
+    "d": "2026-10-21",
+    "start": "10:00",
+    "end": "11:30",
+    "co": "常州市委组织部",
+    "venue": "四平校区-中法中心C201",
+    "school": "同济大学",
+    "type": "宣讲会",
+    "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=34045;xjhbh=5DF336796C3714BAE0631F84A8C02E8B#/xjhxq"
   },
   {
     "d": "2026-10-21",
@@ -24638,6 +24818,16 @@
     "school": "华东师范大学",
     "type": "招聘会",
     "link": "https://career.ecnu.edu.cn/career/zphxx/view/244848278020165632"
+  },
+  {
+    "d": "2026-10-21",
+    "start": "14:00",
+    "end": "",
+    "co": "千校联合校招平台 - 上海交通大学专场招聘会",
+    "venue": "学生中心D200多功能厅",
+    "school": "上海交通大学",
+    "type": "招聘会",
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/251044516147105792"
   },
   {
     "d": "2026-10-21",
@@ -24732,6 +24922,16 @@
   {
     "d": "2026-10-21",
     "start": "14:00",
+    "end": "",
+    "co": "青春如虹，向芯而行｜华虹集团 2027 届校园招聘上海财经大学专场宣讲会",
+    "venue": "会计学院楼108室",
+    "school": "上海财经大学",
+    "type": "宣讲会",
+    "link": "https://career.sufe.edu.cn/career/xjhxx/view/252726663203393536"
+  },
+  {
+    "d": "2026-10-21",
+    "start": "14:00",
     "end": "14:00",
     "co": "上海集成电路研发中心有限公司 2027年度校园招聘",
     "venue": "松2134",
@@ -24818,6 +25018,16 @@
     "school": "同济大学",
     "type": "宣讲会",
     "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=7964f5673969406fb12490f1ff389109;xjhbh=5D9B01E6BE1D0A5DE0632084A8C00DCA#/xjhxq"
+  },
+  {
+    "d": "2026-10-21",
+    "start": "14:00",
+    "end": "15:00",
+    "co": "合肥大学",
+    "venue": "土木楼B103",
+    "school": "同济大学",
+    "type": "宣讲会",
+    "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=40280386288b22920128a4c166870025;xjhbh=5E3D1CD18BA4648BE0631F84A8C02729#/xjhxq"
   },
   {
     "d": "2026-10-21",
@@ -25202,6 +25412,16 @@
   {
     "d": "2026-10-21",
     "start": "18:00",
+    "end": "",
+    "co": "益丰集团-27届华东师范大学专场招聘会",
+    "venue": "闵二教217(86人）",
+    "school": "华东师范大学",
+    "type": "招聘会",
+    "link": "https://career.ecnu.edu.cn/career/xjhxx/view/250903834287804416"
+  },
+  {
+    "d": "2026-10-21",
+    "start": "18:00",
     "end": "19:30",
     "co": "上海新时达电气股份有限公司宣讲会",
     "venue": "研究生楼603",
@@ -25234,7 +25454,7 @@
     "start": "18:00",
     "end": "20:00",
     "co": "宁波均胜电子股份有限公司",
-    "venue": "嘉定校区-同心楼124",
+    "venue": "嘉定校区-艺嘉楼210",
     "school": "同济大学",
     "type": "宣讲会",
     "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=D1F902D4449C7749E0532084A8C0A5B9;xjhbh=01e0be9621c44828a0d123d44e528648#/xjhxq"
@@ -25298,6 +25518,46 @@
     "school": "华东理工大学",
     "type": "宣讲会",
     "link": "https://career.ecust.edu.cn/student/RecruitmentDetail.aspx?id=24303"
+  },
+  {
+    "d": "2026-10-21",
+    "start": "19:00",
+    "end": "21:00",
+    "co": "格雷博 2027 届 秋季校园招聘",
+    "venue": "重新申请：21号晚松1238    原：19号下午松2125",
+    "school": "东华大学",
+    "type": "宣讲会",
+    "link": "https://ejob.dhu.edu.cn/page/preaching.html?wid=81f50dfeb04644ac8498f5ed9798ed6e"
+  },
+  {
+    "d": "2026-10-22",
+    "start": "09:00",
+    "end": "10:00",
+    "co": "国网冀北电力有限公司",
+    "venue": "杨浦-行政中心9楼一号会议室",
+    "school": "上海电力大学",
+    "type": "宣讲会",
+    "link": "https://career.shiep.edu.cn/teachin/view/id/110719"
+  },
+  {
+    "d": "2026-10-22",
+    "start": "09:30",
+    "end": "",
+    "co": "中国华能集团有限公司2027年校园招聘",
+    "venue": "学生中心D200多功能厅",
+    "school": "上海交通大学",
+    "type": "宣讲会",
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/252731537555066880"
+  },
+  {
+    "d": "2026-10-22",
+    "start": "09:30",
+    "end": "",
+    "co": "2026年广西选调华东师范大学宣讲会",
+    "venue": "（普陀）文科大楼401会议室",
+    "school": "华东师范大学",
+    "type": "宣讲会",
+    "link": "https://career.ecnu.edu.cn/career/xjhxx/view/251706160518926336"
   },
   {
     "d": "2026-10-22",
@@ -25462,22 +25722,32 @@
   {
     "d": "2026-10-22",
     "start": "14:00",
+    "end": "",
+    "co": "中国船级社2027届校园招聘宣讲",
+    "venue": "木兰船建大楼A208",
+    "school": "上海交通大学",
+    "type": "宣讲会",
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/252729378402865152"
+  },
+  {
+    "d": "2026-10-22",
+    "start": "14:00",
+    "end": "",
+    "co": "亨通集团有限公司宣讲会",
+    "venue": "学生中心C202多功能厅",
+    "school": "上海交通大学",
+    "type": "宣讲会",
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/241597499725451264"
+  },
+  {
+    "d": "2026-10-22",
+    "start": "14:00",
     "end": "15:00",
     "co": "博腾股份宣讲会",
     "venue": "学术楼103",
     "school": "上海电力大学",
     "type": "宣讲会",
     "link": "https://career.shiep.edu.cn/teachin/view/id/110640"
-  },
-  {
-    "d": "2026-10-22",
-    "start": "14:00",
-    "end": "17:00",
-    "co": "国投钦州发电有限公司2026年秋季校园招聘宣讲会",
-    "venue": "临港-学术楼105会议室",
-    "school": "上海电力大学",
-    "type": "宣讲会",
-    "link": "https://career.shiep.edu.cn/teachin/view/id/110649"
   },
   {
     "d": "2026-10-22",
@@ -25532,6 +25802,16 @@
   {
     "d": "2026-10-22",
     "start": "14:00",
+    "end": "",
+    "co": "香港城市大学（东莞）校园宣讲会",
+    "venue": "普陀校区 教书院210(44人|多媒体教室)",
+    "school": "华东师范大学",
+    "type": "宣讲会",
+    "link": "https://career.ecnu.edu.cn/career/xjhxx/view/251748676307914752"
+  },
+  {
+    "d": "2026-10-22",
+    "start": "14:00",
     "end": "17:00",
     "co": "云南惠民劳务服务有限公司宣讲会",
     "venue": "逸夫楼演讲厅",
@@ -25574,7 +25854,7 @@
     "start": "14:30",
     "end": "16:30",
     "co": "延锋2027届校园招聘宣讲会",
-    "venue": "复合材料大楼第一报告厅",
+    "venue": "图文中心第二报告厅",
     "school": "东华大学",
     "type": "宣讲会",
     "link": "https://ejob.dhu.edu.cn/page/preaching.html?wid=8165e27514b14d7b941d637f9e17689a"
@@ -25608,6 +25888,16 @@
     "school": "同济大学",
     "type": "宣讲会",
     "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=2cc8ce8a33aa482e9ee068da07e408a4;xjhbh=eb725e701b3e486f8295b063b3b7a737#/xjhxq"
+  },
+  {
+    "d": "2026-10-22",
+    "start": "14:30",
+    "end": "16:30",
+    "co": "中国煤炭科工集团太原研究院有限公司山西天地煤机装备有限公司",
+    "venue": "嘉定校区-济人楼310",
+    "school": "同济大学",
+    "type": "宣讲会",
+    "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=402803852bab73ff012bd2c833c70035;xjhbh=5E562328ABC75DBAE0631F84A8C07BCC#/xjhxq"
   },
   {
     "d": "2026-10-22",
@@ -25688,6 +25978,16 @@
     "school": "上海电力大学",
     "type": "宣讲会",
     "link": "https://career.shiep.edu.cn/teachin/view/id/110637"
+  },
+  {
+    "d": "2026-10-22",
+    "start": "15:30",
+    "end": "17:00",
+    "co": "中国石化工程建设有限公司",
+    "venue": "土木楼B504",
+    "school": "同济大学",
+    "type": "宣讲会",
+    "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=24854;xjhbh=5E52A1860E937DEEE0631F84A8C0DCD5#/xjhxq"
   },
   {
     "d": "2026-10-22",
@@ -25922,6 +26222,16 @@
   {
     "d": "2026-10-23",
     "start": "09:00",
+    "end": "",
+    "co": "2026年“山东—名校人才直通车”上海站招聘活动公告",
+    "venue": "学生中心D200多功能厅",
+    "school": "上海交通大学",
+    "type": "宣讲会",
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/251093510898454528"
+  },
+  {
+    "d": "2026-10-23",
+    "start": "09:00",
     "end": "11:30",
     "co": "江西赣能股份有限公司丰城发电厂",
     "venue": "临港-学术楼301会议室",
@@ -25952,22 +26262,12 @@
   {
     "d": "2026-10-23",
     "start": "09:30",
-    "end": "11:00",
-    "co": "宜宾人才发展集团有限公司",
-    "venue": "四平校区-经纬楼一楼多功能厅",
+    "end": "10:30",
+    "co": "四川宜宾2026年知名高校引才行动同济大学推介专场活动",
+    "venue": "四平校区-经纬楼三楼演讲厅",
     "school": "同济大学",
     "type": "宣讲会",
-    "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=ec416feca68545208ba8ac4ac2d45fa0;xjhbh=5E0002CF95847E55E0631F84A8C071F5#/xjhxq"
-  },
-  {
-    "d": "2026-10-23",
-    "start": "10:00",
-    "end": "",
-    "co": "2026年“山东—名校人才直通车”上海站招聘活动公告",
-    "venue": "学生中心D200多功能厅",
-    "school": "上海交通大学",
-    "type": "宣讲会",
-    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/251093510898454528"
+    "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=ec416feca68545208ba8ac4ac2d45fa0;xjhbh=ff58a78131f44473b5f842426f39eece#/xjhxq"
   },
   {
     "d": "2026-10-23",
@@ -26001,13 +26301,13 @@
   },
   {
     "d": "2026-10-23",
-    "start": "10:00",
-    "end": "11:30",
-    "co": "宜宾人才发展集团有限公司",
-    "venue": "四平校区-经纬楼三楼演讲厅",
+    "start": "10:30",
+    "end": "12:00",
+    "co": "四川宜宾2026年知名高校引才行动同济大学招聘专场活动",
+    "venue": "四平校区-经纬楼一楼多功能厅",
     "school": "同济大学",
     "type": "宣讲会",
-    "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=ec416feca68545208ba8ac4ac2d45fa0;xjhbh=ff58a78131f44473b5f842426f39eece#/xjhxq"
+    "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=ec416feca68545208ba8ac4ac2d45fa0;xjhbh=5E0002CF95847E55E0631F84A8C071F5#/xjhxq"
   },
   {
     "d": "2026-10-23",
@@ -26032,6 +26332,16 @@
   {
     "d": "2026-10-23",
     "start": "13:30",
+    "end": "16:00",
+    "co": "1022上海财经大学2026年秋季综合场招聘会",
+    "venue": "大学生活动中心三楼",
+    "school": "上海财经大学",
+    "type": "招聘会",
+    "link": "https://career.sufe.edu.cn/career/zphxx/view/253082393345396736"
+  },
+  {
+    "d": "2026-10-23",
+    "start": "13:30",
     "end": "14:30",
     "co": "2027届校招宣讲会",
     "venue": "松2教221",
@@ -26048,6 +26358,16 @@
     "school": "华东理工大学",
     "type": "宣讲会",
     "link": "https://career.ecust.edu.cn/student/RecruitmentDetail.aspx?id=24270"
+  },
+  {
+    "d": "2026-10-23",
+    "start": "14:00",
+    "end": "",
+    "co": "上海司南导航技术股份有限公司宣讲会",
+    "venue": "学生中心C202多功能厅",
+    "school": "上海交通大学",
+    "type": "宣讲会",
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/253474566918246400"
   },
   {
     "d": "2026-10-23",
@@ -26128,6 +26448,16 @@
     "school": "东华大学",
     "type": "宣讲会",
     "link": "https://ejob.dhu.edu.cn/page/preaching.html?wid=ec339f63424f4966b4f680dda028101a"
+  },
+  {
+    "d": "2026-10-23",
+    "start": "14:00",
+    "end": "",
+    "co": "德州仪器 Texas Instruments    2027届应届生招聘宣讲会",
+    "venue": "普陀校区 教书院218(144人|多媒体教室)",
+    "school": "华东师范大学",
+    "type": "宣讲会",
+    "link": "https://career.ecnu.edu.cn/career/xjhxx/view/251445238634254336"
   },
   {
     "d": "2026-10-23",
@@ -26262,12 +26592,32 @@
   {
     "d": "2026-10-23",
     "start": "18:00",
+    "end": "19:30",
+    "co": "格雷博智能动力科技股份有限公司",
+    "venue": "宝山校区A101",
+    "school": "上海大学",
+    "type": "宣讲会",
+    "link": "https://job.shu.edu.cn/home/recruit-info/xjh-list"
+  },
+  {
+    "d": "2026-10-23",
+    "start": "18:00",
     "end": "",
     "co": "山东京博控股集团有限公司校园宣讲会",
     "venue": "大学生活动中心A205",
     "school": "上海财经大学",
     "type": "宣讲会",
     "link": "https://career.sufe.edu.cn/career/xjhxx/view/243042977436536832"
+  },
+  {
+    "d": "2026-10-23",
+    "start": "18:30",
+    "end": "",
+    "co": "山西证券股份有限公司固收业务校园宣讲会",
+    "venue": "大学生活动中心A205",
+    "school": "上海财经大学",
+    "type": "宣讲会",
+    "link": "https://career.sufe.edu.cn/career/xjhxx/view/253146244749332480"
   },
   {
     "d": "2026-10-23",
@@ -26288,6 +26638,16 @@
     "school": "华东理工大学",
     "type": "宣讲会",
     "link": "https://career.ecust.edu.cn/student/RecruitmentDetail.aspx?id=24294"
+  },
+  {
+    "d": "2026-10-24",
+    "start": "09:00",
+    "end": "",
+    "co": "15所领办学校 | 初高中全学科教师招聘",
+    "venue": "闵行校区第二教学楼311（宣讲）；314、316（面试）",
+    "school": "华东师范大学",
+    "type": "宣讲会",
+    "link": "https://career.ecnu.edu.cn/career/xjhxx/view/253221201298722816"
   },
   {
     "d": "2026-10-24",
@@ -26314,10 +26674,40 @@
     "start": "14:00",
     "end": "17:00",
     "co": "亨通集团有限公司",
-    "venue": "杨浦校区-行政中心9楼六号会议室",
+    "venue": "明理楼109",
     "school": "上海电力大学",
     "type": "宣讲会",
     "link": "https://career.shiep.edu.cn/teachin/view/id/110701"
+  },
+  {
+    "d": "2026-10-26",
+    "start": "09:30",
+    "end": "",
+    "co": "福州市教育系统2026年校园引才专场活动",
+    "venue": "孟院202",
+    "school": "华东师范大学",
+    "type": "宣讲会",
+    "link": "https://career.ecnu.edu.cn/career/xjhxx/view/253819374970998784"
+  },
+  {
+    "d": "2026-10-26",
+    "start": "10:00",
+    "end": "",
+    "co": "中国长江三峡集团有限公司校园宣讲会",
+    "venue": "学生中心C204多功能厅",
+    "school": "上海交通大学",
+    "type": "宣讲会",
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/245600127857856512"
+  },
+  {
+    "d": "2026-10-26",
+    "start": "10:00",
+    "end": "",
+    "co": "北京玻色量子科技股份有限公司2027届校园宣讲会",
+    "venue": "学生中心C202多功能厅",
+    "school": "上海交通大学",
+    "type": "宣讲会",
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/251295780302884864"
   },
   {
     "d": "2026-10-26",
@@ -26382,6 +26772,26 @@
   {
     "d": "2026-10-26",
     "start": "14:00",
+    "end": "",
+    "co": "中建三局集团有限公司校园宣讲会",
+    "venue": "学生中心C202多功能厅",
+    "school": "上海交通大学",
+    "type": "宣讲会",
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/252384916954812416"
+  },
+  {
+    "d": "2026-10-26",
+    "start": "14:00",
+    "end": "",
+    "co": "高博人才2026年秋季“新质引擎·智领未来”全国巡回博士、博士后高层次人才专场签约洽谈会—上海交通大学站",
+    "venue": "学生中心D200多功能厅",
+    "school": "上海交通大学",
+    "type": "宣讲会",
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/248867181142609920"
+  },
+  {
+    "d": "2026-10-26",
+    "start": "14:00",
     "end": "15:00",
     "co": "中国重汽集团国际有限公司校园招聘",
     "venue": "松江校区",
@@ -26432,6 +26842,16 @@
   {
     "d": "2026-10-26",
     "start": "14:00",
+    "end": "15:00",
+    "co": "中国石化仪征化纤有限责任公司2027招聘宣讲会",
+    "venue": "松2125",
+    "school": "东华大学",
+    "type": "宣讲会",
+    "link": "https://ejob.dhu.edu.cn/page/preaching.html?wid=1191d8a06163453380a34c2d5823ec24"
+  },
+  {
+    "d": "2026-10-26",
+    "start": "14:00",
     "end": "16:00",
     "co": "华泰证券上海分公司秋招",
     "venue": "延4教202",
@@ -26458,6 +26878,16 @@
     "school": "上海财经大学",
     "type": "宣讲会",
     "link": "https://career.sufe.edu.cn/career/xjhxx/view/248550799515455488"
+  },
+  {
+    "d": "2026-10-26",
+    "start": "14:30",
+    "end": "",
+    "co": "四川外国语大学附属外国语学校校园宣讲会",
+    "venue": "（闵行）学生之家A207-A208",
+    "school": "华东师范大学",
+    "type": "宣讲会",
+    "link": "https://career.ecnu.edu.cn/career/xjhxx/view/253862208835031040"
   },
   {
     "d": "2026-10-26",
@@ -26511,6 +26941,56 @@
   },
   {
     "d": "2026-10-26",
+    "start": "15:30",
+    "end": "17:30",
+    "co": "甘肃巨化新材料有限公司",
+    "venue": "杨浦-致远楼304",
+    "school": "上海电力大学",
+    "type": "宣讲会",
+    "link": "https://career.shiep.edu.cn/teachin/view/id/110726"
+  },
+  {
+    "d": "2026-10-26",
+    "start": "15:30",
+    "end": "17:30",
+    "co": "甘肃巨化新材料有限公司",
+    "venue": "临港-\"一站式“学生社区",
+    "school": "上海电力大学",
+    "type": "宣讲会",
+    "link": "https://career.shiep.edu.cn/teachin/view/id/110715"
+  },
+  {
+    "d": "2026-10-26",
+    "start": "15:30",
+    "end": "17:30",
+    "co": "山东能源集团营销贸易有限公司招聘",
+    "venue": "延1教202",
+    "school": "东华大学",
+    "type": "宣讲会",
+    "link": "https://ejob.dhu.edu.cn/page/preaching.html?wid=f234ccd380ca4d37a72caddcb05050d4"
+  },
+  {
+    "d": "2026-10-26",
+    "start": "16:00",
+    "end": "20:00",
+    "co": "德州仪器半导体技术（上海）有限公司",
+    "venue": "SA410",
+    "school": "上海对外经贸大学",
+    "type": "宣讲会",
+    "link": "https://job.suibe.edu.cn/home/recruit-info/xjh-list"
+  },
+  {
+    "d": "2026-10-26",
+    "start": "16:00",
+    "end": "17:00",
+    "co": "江苏是为科技有限公司",
+    "venue": "临港-学术楼105会议室",
+    "school": "上海电力大学",
+    "type": "宣讲会",
+    "link": "https://career.shiep.edu.cn/teachin/view/id/110673"
+  },
+  {
+    "d": "2026-10-26",
     "start": "16:00",
     "end": "20:00",
     "co": "江苏神马电力股份有限公司",
@@ -26518,6 +26998,16 @@
     "school": "上海电力大学",
     "type": "宣讲会",
     "link": "https://career.shiep.edu.cn/teachin/view/id/110664"
+  },
+  {
+    "d": "2026-10-26",
+    "start": "18:00",
+    "end": "",
+    "co": "上海玄信资产管理中心（有限合伙）宣讲会",
+    "venue": "学生中心B205多功能厅",
+    "school": "上海交通大学",
+    "type": "宣讲会",
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/244867190296285184"
   },
   {
     "d": "2026-10-26",
@@ -26570,10 +27060,20 @@
     "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=402803852c587af0012c5dc43bd3002d;xjhbh=d3d0b08c911d4858a5470c03bff383c1#/xjhxq"
   },
   {
+    "d": "2026-10-26",
+    "start": "18:30",
+    "end": "20:30",
+    "co": "德州仪器 Texas Instruments    2027届应届生招聘宣讲会",
+    "venue": "松江校区",
+    "school": "上海外国语大学",
+    "type": "宣讲会",
+    "link": "https://career.shisu.edu.cn/preaching.html?wid=26101620043164886925"
+  },
+  {
     "d": "2026-10-27",
     "start": "09:00",
     "end": "11:30",
-    "co": "平安银行股份有限公司上海分行",
+    "co": "【已取消】平安银行股份有限公司上海分行",
     "venue": "四平校区-大学生活动中心2号楼1楼会议室",
     "school": "同济大学",
     "type": "宣讲会",
@@ -26588,6 +27088,16 @@
     "school": "同济大学",
     "type": "宣讲会",
     "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=93c548b795ad4f2088b23001c96e8b68;xjhbh=5D76ED670ED45816E0631F84A8C081AB#/xjhxq"
+  },
+  {
+    "d": "2026-10-27",
+    "start": "10:00",
+    "end": "11:30",
+    "co": "得力集团有限公司",
+    "venue": "宝山校区GJ106",
+    "school": "上海大学",
+    "type": "宣讲会",
+    "link": "https://job.shu.edu.cn/home/recruit-info/xjh-list"
   },
   {
     "d": "2026-10-27",
@@ -26608,6 +27118,26 @@
     "school": "东华大学",
     "type": "宣讲会",
     "link": "https://ejob.dhu.edu.cn/page/preaching.html?wid=00773fffc3b5483788b9bd298629f0ee"
+  },
+  {
+    "d": "2026-10-27",
+    "start": "10:00",
+    "end": "",
+    "co": "上海科技大学附属学校校园宣讲会",
+    "venue": "闵行校区 闵四教222(63人|多媒体教室)",
+    "school": "华东师范大学",
+    "type": "宣讲会",
+    "link": "https://career.ecnu.edu.cn/career/xjhxx/view/251338231487008768"
+  },
+  {
+    "d": "2026-10-27",
+    "start": "10:00",
+    "end": "11:30",
+    "co": "甘肃医学院高层次人才引进校园宣讲会",
+    "venue": "四平校区-大学生活动中心2号楼1楼会议室",
+    "school": "同济大学",
+    "type": "宣讲会",
+    "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=b4543ae39fd2467db4973a451ab436f5;xjhbh=8a062fa959d24c089b529e5e4e5c22a6#/xjhxq"
   },
   {
     "d": "2026-10-27",
@@ -26642,6 +27172,16 @@
   {
     "d": "2026-10-27",
     "start": "13:00",
+    "end": "17:00",
+    "co": "上海立讯信息技术有限公司",
+    "venue": "综合楼B区405",
+    "school": "上海理工大学",
+    "type": "宣讲会",
+    "link": "https://91.usst.edu.cn/home/recruit-info/xjh-list"
+  },
+  {
+    "d": "2026-10-27",
+    "start": "13:00",
     "end": "",
     "co": "上汽集团2027届全球校园招聘——华东师范大学专场招聘会",
     "venue": "理科大楼B112",
@@ -26671,6 +27211,36 @@
   },
   {
     "d": "2026-10-27",
+    "start": "13:30",
+    "end": "15:00",
+    "co": "华为技术有限公司",
+    "venue": "建筑与城市规划学院D楼D1报告厅（五楼）",
+    "school": "同济大学",
+    "type": "宣讲会",
+    "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=977;xjhbh=5E642D5637BC217BE0631F84A8C0BBAA#/xjhxq"
+  },
+  {
+    "d": "2026-10-27",
+    "start": "14:00",
+    "end": "15:00",
+    "co": "广东军辉达进出口贸易有限公司空中宣讲会",
+    "venue": "线上",
+    "school": "上海外国语大学",
+    "type": "宣讲会",
+    "link": "https://career.shisu.edu.cn/preaching.html?wid=26101917290118997179"
+  },
+  {
+    "d": "2026-10-27",
+    "start": "14:00",
+    "end": "16:00",
+    "co": "上海岱澳人才信息咨询有限公司",
+    "venue": "信息楼530",
+    "school": "上海对外经贸大学",
+    "type": "宣讲会",
+    "link": "https://job.suibe.edu.cn/home/recruit-info/xjh-list"
+  },
+  {
+    "d": "2026-10-27",
     "start": "14:00",
     "end": "18:00",
     "co": "上海农村商业银行股份有限公司",
@@ -26692,8 +27262,28 @@
   {
     "d": "2026-10-27",
     "start": "14:00",
+    "end": "15:00",
+    "co": "中国石化仪征化纤有限责任公司2027招聘宣讲会",
+    "venue": "无宣讲，面松1121",
+    "school": "东华大学",
+    "type": "宣讲会",
+    "link": "https://ejob.dhu.edu.cn/page/preaching.html?wid=773c5cb7923947c097ca01b71244215a"
+  },
+  {
+    "d": "2026-10-27",
+    "start": "14:00",
+    "end": "15:00",
+    "co": "广东军辉达进出口贸易有限公司空中宣讲会",
+    "venue": "线上",
+    "school": "东华大学",
+    "type": "宣讲会",
+    "link": "https://ejob.dhu.edu.cn/page/preaching.html?wid=a41c5f5dd1dc458fafcdf10a04324d48"
+  },
+  {
+    "d": "2026-10-27",
+    "start": "14:00",
     "end": "16:00",
-    "co": "延锋汽车内饰系统（上海）有限公司2027校园招聘宣讲会",
+    "co": "延锋汽车内饰系统（上海）有限公司2027校园招聘宣讲会【已取消】",
     "venue": "松2教134",
     "school": "东华大学",
     "type": "宣讲会",
@@ -26728,6 +27318,26 @@
     "school": "同济大学",
     "type": "宣讲会",
     "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=40280385323814e101324673b2b3002b;xjhbh=f5100551a4624b689cb459bc1a52e0e8#/xjhxq"
+  },
+  {
+    "d": "2026-10-27",
+    "start": "14:30",
+    "end": "16:30",
+    "co": "春秋航空股份有限公司",
+    "venue": "嘉定校区-济人楼405",
+    "school": "同济大学",
+    "type": "宣讲会",
+    "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=402803852d592495012e22de508f00a2;xjhbh=2799321dd69b4e638d27e05d67e220b2#/xjhxq"
+  },
+  {
+    "d": "2026-10-27",
+    "start": "14:30",
+    "end": "16:30",
+    "co": "长安大学",
+    "venue": "嘉定校区-济人楼210",
+    "school": "同济大学",
+    "type": "宣讲会",
+    "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=35327;xjhbh=c769090be6374fb68dabacae4b440944#/xjhxq"
   },
   {
     "d": "2026-10-27",
@@ -26801,6 +27411,26 @@
   },
   {
     "d": "2026-10-27",
+    "start": "16:00",
+    "end": "17:00",
+    "co": "中国科学院微小卫星创新研究院",
+    "venue": "嘉定校区-济人楼310",
+    "school": "同济大学",
+    "type": "宣讲会",
+    "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=dc13b42da67347c5869b22b1222d8ba1;xjhbh=4ecf216351c449ebaad06d712024d469#/xjhxq"
+  },
+  {
+    "d": "2026-10-27",
+    "start": "16:30",
+    "end": "20:00",
+    "co": "上海汉得2027届校园招聘",
+    "venue": "延4教105",
+    "school": "东华大学",
+    "type": "宣讲会",
+    "link": "https://ejob.dhu.edu.cn/page/preaching.html?wid=553c907a0727418988e606cdb6715b37"
+  },
+  {
+    "d": "2026-10-27",
     "start": "18:00",
     "end": "",
     "co": "武汉光谷金融控股集团有限公司2027届校园招聘",
@@ -26813,11 +27443,41 @@
     "d": "2026-10-27",
     "start": "18:00",
     "end": "",
+    "co": "燕东微2027全球校园招聘宣讲会",
+    "venue": "学生中心C204多功能厅",
+    "school": "上海交通大学",
+    "type": "宣讲会",
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/250302064448638976"
+  },
+  {
+    "d": "2026-10-27",
+    "start": "18:00",
+    "end": "",
     "co": "百威中国2027管理培训生校园招聘宣讲会",
     "venue": "学生中心C202多功能厅",
     "school": "上海交通大学",
     "type": "宣讲会",
     "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/242325918369058816"
+  },
+  {
+    "d": "2026-10-27",
+    "start": "18:00",
+    "end": "19:30",
+    "co": "京东方科技集团股份有限公司",
+    "venue": "宝山校区A101",
+    "school": "上海大学",
+    "type": "宣讲会",
+    "link": "https://job.shu.edu.cn/home/recruit-info/xjh-list"
+  },
+  {
+    "d": "2026-10-27",
+    "start": "18:00",
+    "end": "19:30",
+    "co": "山东能源集团营销贸易有限公司",
+    "venue": "宝山校区A202",
+    "school": "上海大学",
+    "type": "宣讲会",
+    "link": "https://job.shu.edu.cn/home/recruit-info/xjh-list"
   },
   {
     "d": "2026-10-27",
@@ -26890,10 +27550,90 @@
     "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=40280386259be9db0125bf5361870015;xjhbh=bd04837bbde5462eb6809dceef6cd272#/xjhxq"
   },
   {
+    "d": "2026-10-27",
+    "start": "18:00",
+    "end": "20:00",
+    "co": "芯联集成电路制造股份有限公司",
+    "venue": "见详情页面",
+    "school": "同济大学",
+    "type": "招聘会",
+    "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=c277774d26ec47da877cbca43b3686fc;xjhbh=4772f2209bee4214a815adc19dce6747#/xjhxq"
+  },
+  {
+    "d": "2026-10-27",
+    "start": "19:00",
+    "end": "",
+    "co": "芯联集成2027届校园招聘空中宣讲会",
+    "venue": "线上",
+    "school": "上海交通大学",
+    "type": "宣讲会",
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/253837833989656576"
+  },
+  {
+    "d": "2026-10-27",
+    "start": "19:00",
+    "end": "20:00",
+    "co": "芯联集成2027届校园招聘空中宣讲会",
+    "venue": "线上",
+    "school": "上海电力大学",
+    "type": "宣讲会",
+    "link": "https://career.shiep.edu.cn/teachin/view/id/110727"
+  },
+  {
+    "d": "2026-10-27",
+    "start": "19:00",
+    "end": "20:00",
+    "co": "芯联集成2027届校园招聘空中宣讲会",
+    "venue": "线上",
+    "school": "东华大学",
+    "type": "宣讲会",
+    "link": "https://ejob.dhu.edu.cn/page/preaching.html?wid=53b6e1bcb5f3439885629df6fe71f6a8"
+  },
+  {
+    "d": "2026-10-28",
+    "start": "08:00",
+    "end": "08:10",
+    "co": "国网江苏省电力公司",
+    "venue": "杨浦校区",
+    "school": "上海电力大学",
+    "type": "宣讲会",
+    "link": "https://career.shiep.edu.cn/teachin/view/id/110714"
+  },
+  {
+    "d": "2026-10-28",
+    "start": "10:00",
+    "end": "",
+    "co": "长安大学校园宣讲会",
+    "venue": "学生中心C202多功能厅",
+    "school": "上海交通大学",
+    "type": "宣讲会",
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/248393585140043776"
+  },
+  {
+    "d": "2026-10-28",
+    "start": "10:00",
+    "end": "11:30",
+    "co": "立讯精密工业股份有限公司",
+    "venue": "宝山校区D106，面试D221D222",
+    "school": "上海大学",
+    "type": "宣讲会",
+    "link": "https://job.shu.edu.cn/home/recruit-info/xjh-list"
+  },
+  {
+    "d": "2026-10-28",
+    "start": "13:00",
+    "end": "14:30",
+    "co": "上海继峰座椅有限公司",
+    "venue": "宝山校区A303",
+    "school": "上海大学",
+    "type": "宣讲会",
+    "link": "https://job.shu.edu.cn/home/recruit-info/xjh-list"
+  },
+  {
     "d": "2026-10-28",
     "start": "13:30",
     "end": "16:00",
-    "co": "上海交大·华东师大2027届毕业生秋季联合招聘会",
+    "co": "上海交大·华东师大2027届毕业生秋季联合招聘会（第二场）",
     "venue": "闵行校区霍英东体育中心二楼",
     "school": "上海交通大学",
     "type": "招聘会",
@@ -26942,6 +27682,16 @@
   {
     "d": "2026-10-28",
     "start": "14:00",
+    "end": "",
+    "co": "常州市第一中学校园宣讲会",
+    "venue": "闵行校区第二教学楼113",
+    "school": "华东师范大学",
+    "type": "宣讲会",
+    "link": "https://career.ecnu.edu.cn/career/xjhxx/view/253200289014878208"
+  },
+  {
+    "d": "2026-10-28",
+    "start": "14:00",
     "end": "16:00",
     "co": "南德认证检测（中国）有限公司上海分公司宣讲会",
     "venue": "研究生楼503",
@@ -26968,6 +27718,16 @@
     "school": "东华大学",
     "type": "宣讲会",
     "link": "https://ejob.dhu.edu.cn/page/preaching.html?wid=b60378018b214c67b9d7e4926e7656dd"
+  },
+  {
+    "d": "2026-10-28",
+    "start": "14:30",
+    "end": "16:30",
+    "co": "上海华为技术有限公司",
+    "venue": "嘉定校区-同心楼124",
+    "school": "同济大学",
+    "type": "宣讲会",
+    "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=17690;xjhbh=1c9879551d044b4ea703ade3a98dc8a0#/xjhxq"
   },
   {
     "d": "2026-10-28",
@@ -27008,6 +27768,46 @@
     "school": "上海电力大学",
     "type": "宣讲会",
     "link": "https://career.shiep.edu.cn/teachin/view/id/110672"
+  },
+  {
+    "d": "2026-10-28",
+    "start": "15:00",
+    "end": "16:30",
+    "co": "广东电网有限责任公司",
+    "venue": "杨浦-行政中心9楼1号会议室",
+    "school": "上海电力大学",
+    "type": "宣讲会",
+    "link": "https://career.shiep.edu.cn/teachin/view/id/110724"
+  },
+  {
+    "d": "2026-10-28",
+    "start": "16:00",
+    "end": "18:00",
+    "co": "三一重机有限公司",
+    "venue": "嘉定校区-济人楼312",
+    "school": "同济大学",
+    "type": "宣讲会",
+    "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=36420;xjhbh=5E8EB6B628B33F55E0631F84A8C013E3#/xjhxq"
+  },
+  {
+    "d": "2026-10-28",
+    "start": "16:00",
+    "end": "17:00",
+    "co": "深圳桃李未来教育集团有限公司",
+    "venue": "https://live.bilibili.com/3356592",
+    "school": "同济大学",
+    "type": "招聘会",
+    "link": "https://tj91.tongji.edu.cn/f/recruitmentFair/show?recruitmentFairId=897b57f200a04ddcb8d31f4711787a6b"
+  },
+  {
+    "d": "2026-10-28",
+    "start": "18:00",
+    "end": "",
+    "co": "圣湘生物2027届校园招聘宣讲会",
+    "venue": "学生中心C202多功能厅",
+    "school": "上海交通大学",
+    "type": "宣讲会",
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/252857875985207296"
   },
   {
     "d": "2026-10-28",
@@ -27063,6 +27863,16 @@
     "d": "2026-10-28",
     "start": "18:00",
     "end": "20:00",
+    "co": "格雷博智能动力科技股份有限公司",
+    "venue": "学生发展中心605企业宣讲厅",
+    "school": "上海理工大学",
+    "type": "宣讲会",
+    "link": "https://91.usst.edu.cn/home/recruit-info/xjh-list"
+  },
+  {
+    "d": "2026-10-28",
+    "start": "18:00",
+    "end": "20:00",
     "co": "三一集团有限公司宣讲会",
     "venue": "八教307",
     "school": "华东理工大学",
@@ -27102,12 +27912,72 @@
   {
     "d": "2026-10-28",
     "start": "18:30",
+    "end": "",
+    "co": "上海国际集团2027“菁英计划“校园招聘宣讲会",
+    "venue": "学生中心D200多功能厅",
+    "school": "上海交通大学",
+    "type": "宣讲会",
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/250302940609384448"
+  },
+  {
+    "d": "2026-10-28",
+    "start": "18:30",
+    "end": "",
+    "co": "中国东方航空2027全球校园招聘宣讲会",
+    "venue": "大学生活动中心A205",
+    "school": "上海财经大学",
+    "type": "宣讲会",
+    "link": "https://career.sufe.edu.cn/career/xjhxx/view/252479583104929792"
+  },
+  {
+    "d": "2026-10-28",
+    "start": "18:30",
     "end": "20:30",
     "co": "中车青岛四方机车车辆股份有限公司 2027届校园招聘",
     "venue": "松1101",
     "school": "东华大学",
     "type": "宣讲会",
     "link": "https://ejob.dhu.edu.cn/page/preaching.html?wid=ce8f2e56ef854e9285eb14e7e0434dbd"
+  },
+  {
+    "d": "2026-10-28",
+    "start": "19:00",
+    "end": "20:30",
+    "co": "半亩花田2027年校园招聘宣讲会",
+    "venue": "虹口校区",
+    "school": "上海外国语大学",
+    "type": "宣讲会",
+    "link": "https://career.shisu.edu.cn/preaching.html?wid=26101617155872186233"
+  },
+  {
+    "d": "2026-10-29",
+    "start": "10:00",
+    "end": "",
+    "co": "宝盈基金管理有限公司校园宣讲会",
+    "venue": "学生中心C204多功能厅",
+    "school": "上海交通大学",
+    "type": "宣讲会",
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/253103261429665792"
+  },
+  {
+    "d": "2026-10-29",
+    "start": "10:00",
+    "end": "",
+    "co": "纳狮新材料股份有限公司校园宣讲会",
+    "venue": "学生中心C202多功能厅",
+    "school": "上海交通大学",
+    "type": "宣讲会",
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/252348796854472704"
+  },
+  {
+    "d": "2026-10-29",
+    "start": "10:00",
+    "end": "11:30",
+    "co": "云南省电力投资有限公司",
+    "venue": "临港-学术楼301会议室",
+    "school": "上海电力大学",
+    "type": "宣讲会",
+    "link": "https://career.shiep.edu.cn/teachin/view/id/110712"
   },
   {
     "d": "2026-10-29",
@@ -27121,13 +27991,13 @@
   },
   {
     "d": "2026-10-29",
-    "start": "13:30",
+    "start": "13:00",
     "end": "14:30",
-    "co": "立达（中国）纺织2027届校招宣讲会",
-    "venue": "松1教137",
-    "school": "东华大学",
+    "co": "BAC大连有限公司",
+    "venue": "综合楼B区404",
+    "school": "上海理工大学",
     "type": "宣讲会",
-    "link": "https://ejob.dhu.edu.cn/page/preaching.html?wid=5a871ac8454c48288c59df72965d4cd6"
+    "link": "https://91.usst.edu.cn/home/recruit-info/xjh-list"
   },
   {
     "d": "2026-10-29",
@@ -27142,12 +28012,42 @@
   {
     "d": "2026-10-29",
     "start": "14:00",
-    "end": "15:00",
-    "co": "云南省电力投资有限公司",
-    "venue": "临港-学术楼301会议室",
-    "school": "上海电力大学",
+    "end": "",
+    "co": "国家烟草专卖局 中国烟草总公司机关及所属单位2027年度公开招聘宣讲会",
+    "venue": "学生中心B205多功能厅",
+    "school": "上海交通大学",
     "type": "宣讲会",
-    "link": "https://career.shiep.edu.cn/teachin/view/id/110712"
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/252821643687235584"
+  },
+  {
+    "d": "2026-10-29",
+    "start": "14:00",
+    "end": "",
+    "co": "合肥芯碁微电子装备股份有限公司校园宣讲会",
+    "venue": "大学生活动中心A205",
+    "school": "上海财经大学",
+    "type": "宣讲会",
+    "link": "https://career.sufe.edu.cn/career/xjhxx/view/253096228492021760"
+  },
+  {
+    "d": "2026-10-29",
+    "start": "14:00",
+    "end": "16:00",
+    "co": "上海市公安局2027年度公务员招警",
+    "venue": "图文信息大楼第一报告厅",
+    "school": "东华大学",
+    "type": "宣讲会",
+    "link": "https://ejob.dhu.edu.cn/page/preaching.html?wid=921b3a6e85b34f87883e18c2af06ab2a"
+  },
+  {
+    "d": "2026-10-29",
+    "start": "14:00",
+    "end": "",
+    "co": "春秋航空股份有限公司校园宣讲会",
+    "venue": "教书院302(46人）",
+    "school": "华东师范大学",
+    "type": "宣讲会",
+    "link": "https://career.ecnu.edu.cn/career/xjhxx/view/253207422703898624"
   },
   {
     "d": "2026-10-29",
@@ -27193,16 +28093,6 @@
     "d": "2026-10-29",
     "start": "14:30",
     "end": "16:30",
-    "co": "中建安装集团有限公司",
-    "venue": "四平校区-经纬楼一楼多功能厅",
-    "school": "同济大学",
-    "type": "宣讲会",
-    "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=36669;xjhbh=d4e281d5cac94ef687765a73d4481615#/xjhxq"
-  },
-  {
-    "d": "2026-10-29",
-    "start": "14:30",
-    "end": "16:30",
     "co": "云南省能源集团有限公司",
     "venue": "嘉定校区-艺嘉楼210",
     "school": "同济大学",
@@ -27242,6 +28132,26 @@
   {
     "d": "2026-10-29",
     "start": "15:00",
+    "end": "16:30",
+    "co": "中检集团天帷网络安全技术（合肥）有限公司",
+    "venue": "临港校区第一教学楼1208",
+    "school": "上海海洋大学",
+    "type": "宣讲会",
+    "link": "https://jcxt.shou.edu.cn/"
+  },
+  {
+    "d": "2026-10-29",
+    "start": "15:00",
+    "end": "17:00",
+    "co": "上海纽约大学",
+    "venue": "综合楼B区404",
+    "school": "上海理工大学",
+    "type": "宣讲会",
+    "link": "https://91.usst.edu.cn/home/recruit-info/xjh-list"
+  },
+  {
+    "d": "2026-10-29",
+    "start": "15:00",
     "end": "17:00",
     "co": "盈德气体（上海）有限公司",
     "venue": "综合楼B区405",
@@ -27261,6 +28171,16 @@
   },
   {
     "d": "2026-10-29",
+    "start": "15:30",
+    "end": "16:30",
+    "co": "中建安装集团有限公司",
+    "venue": "四平校区-经纬楼一楼多功能厅",
+    "school": "同济大学",
+    "type": "宣讲会",
+    "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=36669;xjhbh=d4e281d5cac94ef687765a73d4481615#/xjhxq"
+  },
+  {
+    "d": "2026-10-29",
     "start": "18:00",
     "end": "",
     "co": "上海菲婷丝化妆品经营有限公司 2027应届毕业生招聘宣讲会",
@@ -27268,6 +28188,26 @@
     "school": "上海交通大学",
     "type": "宣讲会",
     "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/245323098755305472"
+  },
+  {
+    "d": "2026-10-29",
+    "start": "18:00",
+    "end": "",
+    "co": "云南省能源集团有限公司2027年“源动力”管培生及所属公司校园招聘宣讲会",
+    "venue": "学生中心B205多功能厅",
+    "school": "上海交通大学",
+    "type": "宣讲会",
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/250913568713740288"
+  },
+  {
+    "d": "2026-10-29",
+    "start": "18:00",
+    "end": "",
+    "co": "探索新境，自见新生 | KOLON SPORT可隆体育2027届校园招聘宣讲会",
+    "venue": "学生中心C202多功能厅",
+    "school": "上海交通大学",
+    "type": "宣讲会",
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/250304940214456320"
   },
   {
     "d": "2026-10-29",
@@ -27282,12 +28222,42 @@
   {
     "d": "2026-10-29",
     "start": "18:00",
+    "end": "20:00",
+    "co": "无印良品（上海）商业有限公司",
+    "venue": "信息楼530",
+    "school": "上海对外经贸大学",
+    "type": "宣讲会",
+    "link": "https://job.suibe.edu.cn/home/recruit-info/xjh-list"
+  },
+  {
+    "d": "2026-10-29",
+    "start": "18:00",
+    "end": "20:00",
+    "co": "上海普利特复合材料股份有限公司",
+    "venue": "综合楼B区405",
+    "school": "上海理工大学",
+    "type": "宣讲会",
+    "link": "https://91.usst.edu.cn/home/recruit-info/xjh-list"
+  },
+  {
+    "d": "2026-10-29",
+    "start": "18:00",
     "end": "",
     "co": "广开控股“金粤计划”2027校园招聘宣讲会",
     "venue": "大学生活动中心A205",
     "school": "上海财经大学",
     "type": "宣讲会",
     "link": "https://career.sufe.edu.cn/career/xjhxx/view/245610121965735936"
+  },
+  {
+    "d": "2026-10-29",
+    "start": "19:00",
+    "end": "20:00",
+    "co": "广东大唐国际潮州发电有限责任公司",
+    "venue": "杨浦-“一站式”学生社区（一教二教之间）",
+    "school": "上海电力大学",
+    "type": "宣讲会",
+    "link": "https://career.shiep.edu.cn/teachin/view/id/110722"
   },
   {
     "d": "2026-10-30",
@@ -27301,10 +28271,40 @@
   },
   {
     "d": "2026-10-30",
+    "start": "09:00",
+    "end": "11:00",
+    "co": "中国大唐集团有限公司",
+    "venue": "杨浦-小礼堂",
+    "school": "上海电力大学",
+    "type": "宣讲会",
+    "link": "https://career.shiep.edu.cn/teachin/view/id/110721"
+  },
+  {
+    "d": "2026-10-30",
+    "start": "10:00",
+    "end": "",
+    "co": "春秋航空股份有限公司校园宣讲会",
+    "venue": "学生中心C204多功能厅",
+    "school": "上海交通大学",
+    "type": "宣讲会",
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/253458180024176640"
+  },
+  {
+    "d": "2026-10-30",
     "start": "13:00",
     "end": "14:30",
     "co": "上海农村商业银行股份有限公司",
     "venue": "宣讲教室宝山校区C113；面试教室C115，C111",
+    "school": "上海大学",
+    "type": "宣讲会",
+    "link": "https://job.shu.edu.cn/home/recruit-info/xjh-list"
+  },
+  {
+    "d": "2026-10-30",
+    "start": "13:00",
+    "end": "14:30",
+    "co": "江苏先声药业有限公司",
+    "venue": "宝山校区A102",
     "school": "上海大学",
     "type": "宣讲会",
     "link": "https://job.shu.edu.cn/home/recruit-info/xjh-list"
@@ -27322,12 +28322,32 @@
   {
     "d": "2026-10-30",
     "start": "14:00",
+    "end": "",
+    "co": "中国大唐集团有限公司2027年高校毕业生招聘宣讲会",
+    "venue": "学生中心C202多功能厅",
+    "school": "上海交通大学",
+    "type": "宣讲会",
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/252479763569053696"
+  },
+  {
+    "d": "2026-10-30",
+    "start": "14:00",
     "end": "16:00",
     "co": "【世界500强】立讯精密工业股份有限公司27届校招",
-    "venue": "官网未公布",
+    "venue": "松2154",
     "school": "东华大学",
     "type": "宣讲会",
     "link": "https://ejob.dhu.edu.cn/page/preaching.html?wid=e5dee418d84d4e7e8e9799416b38f5ca"
+  },
+  {
+    "d": "2026-10-30",
+    "start": "14:00",
+    "end": "16:00",
+    "co": "华泰证券上海分公司秋招",
+    "venue": "4教202",
+    "school": "东华大学",
+    "type": "宣讲会",
+    "link": "https://ejob.dhu.edu.cn/page/preaching.html?wid=f5493ee453644b1fbb2e1cfd2118ea2b"
   },
   {
     "d": "2026-10-30",
@@ -27343,11 +28363,41 @@
     "d": "2026-10-30",
     "start": "15:00",
     "end": "16:30",
+    "co": "四川郎酒股份有限公司",
+    "venue": "宝山校区A104宣讲；A103面试（下午三点到八点）",
+    "school": "上海大学",
+    "type": "宣讲会",
+    "link": "https://job.shu.edu.cn/home/recruit-info/xjh-list"
+  },
+  {
+    "d": "2026-10-30",
+    "start": "15:00",
+    "end": "16:30",
     "co": "厦门和新科技股份有限公司",
     "venue": "4教105",
     "school": "东华大学",
     "type": "宣讲会",
     "link": "https://ejob.dhu.edu.cn/page/preaching.html?wid=c622817c64644cef8b8282f5851909d9"
+  },
+  {
+    "d": "2026-10-30",
+    "start": "18:00",
+    "end": "",
+    "co": "杭州远和私募基金有限公司宣讲会",
+    "venue": "学生中心B205多功能厅",
+    "school": "上海交通大学",
+    "type": "宣讲会",
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/252527344370192384"
+  },
+  {
+    "d": "2026-10-30",
+    "start": "18:00",
+    "end": "",
+    "co": "长春金赛药业有限责任公司校园宣讲会",
+    "venue": "学生中心C202多功能厅",
+    "school": "上海交通大学",
+    "type": "宣讲会",
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/252440559795441664"
   },
   {
     "d": "2026-10-30",
@@ -27362,12 +28412,32 @@
   {
     "d": "2026-11-02",
     "start": "14:00",
+    "end": "",
+    "co": "南京倍漾私募基金管理有限公司校园宣讲会",
+    "venue": "学生中心C202多功能厅",
+    "school": "上海交通大学",
+    "type": "宣讲会",
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/252506234257805312"
+  },
+  {
+    "d": "2026-11-02",
+    "start": "14:00",
     "end": "16:30",
     "co": "BONELESSS校园招聘--破界者计划",
     "venue": "延1教206",
     "school": "东华大学",
     "type": "宣讲会",
     "link": "https://ejob.dhu.edu.cn/page/preaching.html?wid=6d2508c6dabf41999d9afa9407286956"
+  },
+  {
+    "d": "2026-11-02",
+    "start": "14:00",
+    "end": "16:30",
+    "co": "上海市公安局",
+    "venue": "嘉定校区-安楼A210",
+    "school": "同济大学",
+    "type": "宣讲会",
+    "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=37722;xjhbh=5E5652E7473C612FE0631F84A8C01493#/xjhxq"
   },
   {
     "d": "2026-11-02",
@@ -27392,22 +28462,32 @@
   {
     "d": "2026-11-02",
     "start": "18:00",
+    "end": "19:30",
+    "co": "中智管理咨询有限公司",
+    "venue": "宝山校区A121",
+    "school": "上海大学",
+    "type": "宣讲会",
+    "link": "https://job.shu.edu.cn/home/recruit-info/xjh-list"
+  },
+  {
+    "d": "2026-11-02",
+    "start": "18:00",
+    "end": "",
+    "co": "腾讯音乐2027校园招聘 · 喜马拉雅专场宣讲",
+    "venue": "普陀校区 文史楼211(124人|多媒体教室)",
+    "school": "华东师范大学",
+    "type": "宣讲会",
+    "link": "https://career.ecnu.edu.cn/career/xjhxx/view/252388204093771776"
+  },
+  {
+    "d": "2026-11-02",
+    "start": "18:00",
     "end": "20:00",
     "co": "上海发那科机器人有限公司",
     "venue": "嘉定校区-济人楼405",
     "school": "同济大学",
     "type": "宣讲会",
     "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=17945;xjhbh=f286158cd1b44712a9ece05713b0f6ee#/xjhxq"
-  },
-  {
-    "d": "2026-11-02",
-    "start": "19:00",
-    "end": "22:30",
-    "co": "牧心致远 裤创未来丨九牧王2027届秋季校园招聘专场宣讲会-东华大学站",
-    "venue": "4教104",
-    "school": "东华大学",
-    "type": "宣讲会",
-    "link": "https://ejob.dhu.edu.cn/page/preaching.html?wid=5cf6f3a79b724918876642c81cd6412b"
   },
   {
     "d": "2026-11-03",
@@ -27418,6 +28498,16 @@
     "school": "上海大学",
     "type": "宣讲会",
     "link": "https://job.shu.edu.cn/home/recruit-info/xjh-list"
+  },
+  {
+    "d": "2026-11-03",
+    "start": "10:00",
+    "end": "12:00",
+    "co": "杭州艾美依航空制造装备有限公司",
+    "venue": "松1137",
+    "school": "东华大学",
+    "type": "宣讲会",
+    "link": "https://ejob.dhu.edu.cn/page/preaching.html?wid=72dc981b2cf7496e8bb865b093272dc7"
   },
   {
     "d": "2026-11-03",
@@ -27441,6 +28531,16 @@
   },
   {
     "d": "2026-11-03",
+    "start": "14:00",
+    "end": "16:00",
+    "co": "【中国500强】道恩集团专场宣讲会",
+    "venue": "松1142",
+    "school": "东华大学",
+    "type": "宣讲会",
+    "link": "https://ejob.dhu.edu.cn/page/preaching.html?wid=c28884c6bb3849f388bf8ce78ddb8500"
+  },
+  {
+    "d": "2026-11-03",
     "start": "14:30",
     "end": "16:30",
     "co": "中化数智科技有限公司",
@@ -27448,6 +28548,26 @@
     "school": "同济大学",
     "type": "宣讲会",
     "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=f0141edccc9f4f52a99e517f2499ac59;xjhbh=5a242169ea064d988970fe707867f63b#/xjhxq"
+  },
+  {
+    "d": "2026-11-03",
+    "start": "15:00",
+    "end": "17:00",
+    "co": "得力集团有限公司",
+    "venue": "学生发展中心605企业宣讲厅",
+    "school": "上海理工大学",
+    "type": "宣讲会",
+    "link": "https://91.usst.edu.cn/home/recruit-info/xjh-list"
+  },
+  {
+    "d": "2026-11-03",
+    "start": "18:00",
+    "end": "19:30",
+    "co": "上海漕河泾开发区经济技术发展有限公司",
+    "venue": "乐乎新楼思源厅",
+    "school": "上海大学",
+    "type": "宣讲会",
+    "link": "https://job.shu.edu.cn/home/recruit-info/xjh-list"
   },
   {
     "d": "2026-11-03",
@@ -27462,12 +28582,32 @@
   {
     "d": "2026-11-03",
     "start": "18:30",
+    "end": "",
+    "co": "上海市公安局2027年度新警招录宣讲会",
+    "venue": "学生中心C202多功能厅",
+    "school": "上海交通大学",
+    "type": "宣讲会",
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/253883865633001472"
+  },
+  {
+    "d": "2026-11-03",
+    "start": "18:30",
     "end": "20:30",
     "co": "腾讯音乐娱乐科技（深圳）有限公司",
     "venue": "嘉定校区-艺嘉楼210",
     "school": "同济大学",
     "type": "宣讲会",
     "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=70cd75010128443991d554c002cb39f5;xjhbh=c9c6fa49a8f44a4aa689cd2fa60d097c#/xjhxq"
+  },
+  {
+    "d": "2026-11-04",
+    "start": "10:00",
+    "end": "11:30",
+    "co": "杭州艾美依航空制造装备有限公司",
+    "venue": "综合楼B区404",
+    "school": "上海理工大学",
+    "type": "宣讲会",
+    "link": "https://91.usst.edu.cn/home/recruit-info/xjh-list"
   },
   {
     "d": "2026-11-04",
@@ -27481,6 +28621,26 @@
   },
   {
     "d": "2026-11-04",
+    "start": "14:00",
+    "end": "",
+    "co": "华兴证券有限公司校园宣讲会",
+    "venue": "学生中心C204多功能厅",
+    "school": "上海交通大学",
+    "type": "宣讲会",
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/250661297673342976"
+  },
+  {
+    "d": "2026-11-04",
+    "start": "14:00",
+    "end": "18:00",
+    "co": "年轻当有作为，同心大有可为 当纳利亚洲2027校园招聘宣讲会",
+    "venue": "复合材料楼第一报告厅",
+    "school": "东华大学",
+    "type": "宣讲会",
+    "link": "https://ejob.dhu.edu.cn/page/preaching.html?wid=a9d0d3338c1b4f0ba2c43913d72d0eb5"
+  },
+  {
+    "d": "2026-11-04",
     "start": "14:30",
     "end": "16:00",
     "co": "年轻当有作为，同心大有可为 当纳利亚洲2027校园招聘宣讲会",
@@ -27488,6 +28648,36 @@
     "school": "东华大学",
     "type": "宣讲会",
     "link": "https://ejob.dhu.edu.cn/page/preaching.html?wid=f90d71696eba470fa2a8f7a898407771"
+  },
+  {
+    "d": "2026-11-04",
+    "start": "18:00",
+    "end": "",
+    "co": "【芯光闪耀，点亮未来】东莞市新兴产业投资有限公司2027校园招聘",
+    "venue": "学生中心C204多功能厅",
+    "school": "上海交通大学",
+    "type": "宣讲会",
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/252822608490401792"
+  },
+  {
+    "d": "2026-11-04",
+    "start": "18:00",
+    "end": "",
+    "co": "翰森制药 2027届校园招聘宣讲会",
+    "venue": "学生中心C202多功能厅",
+    "school": "上海交通大学",
+    "type": "宣讲会",
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/253581830693982208"
+  },
+  {
+    "d": "2026-11-04",
+    "start": "18:00",
+    "end": "19:30",
+    "co": "上海豫园珠宝时尚集团有限公司",
+    "venue": "宝山校区A103",
+    "school": "上海大学",
+    "type": "宣讲会",
+    "link": "https://job.shu.edu.cn/home/recruit-info/xjh-list"
   },
   {
     "d": "2026-11-05",
@@ -27501,6 +28691,56 @@
   },
   {
     "d": "2026-11-05",
+    "start": "10:00",
+    "end": "",
+    "co": "中航集团（国航股份）2027届高校毕业生校园招聘宣讲会",
+    "venue": "学生中心C204多功能厅",
+    "school": "上海交通大学",
+    "type": "宣讲会",
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/251277335213510656"
+  },
+  {
+    "d": "2026-11-05",
+    "start": "13:30",
+    "end": "16:30",
+    "co": "立达（中国）纺织2027届校招宣讲会",
+    "venue": "松1318",
+    "school": "东华大学",
+    "type": "宣讲会",
+    "link": "https://ejob.dhu.edu.cn/page/preaching.html?wid=5a871ac8454c48288c59df72965d4cd6"
+  },
+  {
+    "d": "2026-11-05",
+    "start": "14:00",
+    "end": "15:00",
+    "co": "NYU Stern-上海纽约大学商科硕士项目宣讲会",
+    "venue": "松江校区",
+    "school": "上海外国语大学",
+    "type": "宣讲会",
+    "link": "https://career.shisu.edu.cn/preaching.html?wid=26102016142070211924"
+  },
+  {
+    "d": "2026-11-05",
+    "start": "18:00",
+    "end": "20:00",
+    "co": "豫园珠宝时尚集团 2027年管培生招募计划",
+    "venue": "松江校区",
+    "school": "上海外国语大学",
+    "type": "宣讲会",
+    "link": "https://career.shisu.edu.cn/preaching.html?wid=26102317184367620974"
+  },
+  {
+    "d": "2026-11-05",
+    "start": "18:00",
+    "end": "19:30",
+    "co": "东莞市新兴产业投资有限公司",
+    "venue": "乐乎新楼学海厅",
+    "school": "上海大学",
+    "type": "宣讲会",
+    "link": "https://job.shu.edu.cn/home/recruit-info/xjh-list"
+  },
+  {
+    "d": "2026-11-05",
     "start": "18:00",
     "end": "19:30",
     "co": "腾讯音乐娱乐科技（深圳）有限公司",
@@ -27510,11 +28750,91 @@
     "link": "https://job.shu.edu.cn/home/recruit-info/xjh-list"
   },
   {
+    "d": "2026-11-05",
+    "start": "18:00",
+    "end": "",
+    "co": "天职国际2027届秋季校园招聘宣讲会",
+    "venue": "大学生活动中心A208",
+    "school": "上海财经大学",
+    "type": "宣讲会",
+    "link": "https://career.sufe.edu.cn/career/xjhxx/view/253815972845195264"
+  },
+  {
+    "d": "2026-11-05",
+    "start": "18:00",
+    "end": "",
+    "co": "浙江省国贸集团2027校园招聘宣讲会",
+    "venue": "大学生活动中心A205",
+    "school": "上海财经大学",
+    "type": "宣讲会",
+    "link": "https://career.sufe.edu.cn/career/xjhxx/view/252813887714496512"
+  },
+  {
+    "d": "2026-11-06",
+    "start": "10:00",
+    "end": "11:30",
+    "co": "中国共产党成都市龙泉驿区委员会组织部",
+    "venue": "四平校区-衷和楼410报告厅",
+    "school": "同济大学",
+    "type": "宣讲会",
+    "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=f015bf5a-abc6-11e6-90a1-b7a4b1c3ffc5;xjhbh=5DF399A4FD521F13E0632084A8C00265#/xjhxq"
+  },
+  {
     "d": "2026-11-06",
     "start": "13:00",
     "end": "14:30",
     "co": "延电科技有限责任公司",
-    "venue": "宝山校区D209",
+    "venue": "宝山校区GJ203",
+    "school": "上海大学",
+    "type": "宣讲会",
+    "link": "https://job.shu.edu.cn/home/recruit-info/xjh-list"
+  },
+  {
+    "d": "2026-11-06",
+    "start": "13:00",
+    "end": "15:00",
+    "co": "中冶武勘工程技术有限公司",
+    "venue": "土木楼B103",
+    "school": "同济大学",
+    "type": "宣讲会",
+    "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=26696;xjhbh=5E3C611289F660EFE0632084A8C0C25D#/xjhxq"
+  },
+  {
+    "d": "2026-11-06",
+    "start": "13:30",
+    "end": "15:30",
+    "co": "现场 上海电力大学2027届毕业生秋季综合类招聘会（第二场）",
+    "venue": "临港校区（沪城环路1851号）",
+    "school": "上海电力大学",
+    "type": "招聘会",
+    "link": "https://career.shiep.edu.cn/jobfair/view/id/38543"
+  },
+  {
+    "d": "2026-11-06",
+    "start": "14:00",
+    "end": "",
+    "co": "福建师范大学附属中学2027年“一站式”校园招聘（华东师范大学场）",
+    "venue": "11月6日闵一教H101；11月7日闵四教110、111、115；11月8日闵一教120、121、125、128",
+    "school": "华东师范大学",
+    "type": "宣讲会",
+    "link": "https://career.ecnu.edu.cn/career/xjhxx/view/252467423565975552"
+  },
+  {
+    "d": "2026-11-09",
+    "start": "13:00",
+    "end": "14:30",
+    "co": "麦格纳汽车技术（上海）有限公司徐汇分公司",
+    "venue": "学生发展中心605企业宣讲厅",
+    "school": "上海理工大学",
+    "type": "宣讲会",
+    "link": "https://91.usst.edu.cn/home/recruit-info/xjh-list"
+  },
+  {
+    "d": "2026-11-09",
+    "start": "15:00",
+    "end": "16:30",
+    "co": "维达纸业（中国）有限公司",
+    "venue": "宝山校区A101",
     "school": "上海大学",
     "type": "宣讲会",
     "link": "https://job.shu.edu.cn/home/recruit-info/xjh-list"
@@ -27528,6 +28848,16 @@
     "school": "上海大学",
     "type": "宣讲会",
     "link": "https://job.shu.edu.cn/home/recruit-info/xjh-list"
+  },
+  {
+    "d": "2026-11-09",
+    "start": "18:30",
+    "end": "",
+    "co": "北京京东世纪贸易有限公司校园宣讲会",
+    "venue": "大学生活动中心三楼A301",
+    "school": "上海财经大学",
+    "type": "宣讲会",
+    "link": "https://career.sufe.edu.cn/career/xjhxx/view/252752379865337856"
   },
   {
     "d": "2026-11-10",
@@ -27560,6 +28890,26 @@
     "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=35405;xjhbh=8c870c3554724d93b19d81d9025e6658#/xjhxq"
   },
   {
+    "d": "2026-11-10",
+    "start": "15:00",
+    "end": "17:00",
+    "co": "源卓微纳科技（苏州）股份有限公司",
+    "venue": "学生发展中心605企业宣讲厅",
+    "school": "上海理工大学",
+    "type": "宣讲会",
+    "link": "https://91.usst.edu.cn/home/recruit-info/xjh-list"
+  },
+  {
+    "d": "2026-11-11",
+    "start": "14:00",
+    "end": "",
+    "co": "塔斯汀-2027届管培生专场招聘",
+    "venue": "学生中心C204多功能厅",
+    "school": "上海交通大学",
+    "type": "宣讲会",
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/253176803659747328"
+  },
+  {
     "d": "2026-11-11",
     "start": "14:30",
     "end": "16:30",
@@ -27568,6 +28918,26 @@
     "school": "同济大学",
     "type": "宣讲会",
     "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=1422e20ec717444cab3ab2e3aac1abcb;xjhbh=bcfe0056c9044f01bf1ef81f05b24883#/xjhxq"
+  },
+  {
+    "d": "2026-11-11",
+    "start": "18:00",
+    "end": "20:00",
+    "co": "豫园珠宝时尚集团 2027年管培生招募宣讲会",
+    "venue": "延1教102",
+    "school": "东华大学",
+    "type": "宣讲会",
+    "link": "https://ejob.dhu.edu.cn/page/preaching.html?wid=ba5df0546bd04b5b9a0c7897971287a5"
+  },
+  {
+    "d": "2026-11-12",
+    "start": "18:00",
+    "end": "19:30",
+    "co": "宝钢湛江钢铁有限公司",
+    "venue": "宣讲宝山校区A101(面试 宝山校区B426（13号）A421(14号））",
+    "school": "上海大学",
+    "type": "宣讲会",
+    "link": "https://job.shu.edu.cn/home/recruit-info/xjh-list"
   },
   {
     "d": "2026-11-12",
@@ -27588,5 +28958,25 @@
     "school": "同济大学",
     "type": "宣讲会",
     "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=90d78e2cce8548339766dd8ec6a30b19;xjhbh=5E05386E4D7A5D46E0631F84A8C0131F#/xjhxq"
+  },
+  {
+    "d": "2026-11-13",
+    "start": "18:00",
+    "end": "",
+    "co": "中国建筑科学研究院有限公司2027校园招聘",
+    "venue": "学生中心C204多功能厅",
+    "school": "上海交通大学",
+    "type": "宣讲会",
+    "link": "https://www.job.sjtu.edu.cn/career/xjhxx/view/252823106207485952"
+  },
+  {
+    "d": "2026-11-16",
+    "start": "18:30",
+    "end": "21:00",
+    "co": "牧心致远 裤创未来丨九牧王2027届秋季校园招聘专场宣讲会-东华大学站",
+    "venue": "延1教102",
+    "school": "东华大学",
+    "type": "宣讲会",
+    "link": "https://ejob.dhu.edu.cn/page/preaching.html?wid=5cf6f3a79b724918876642c81cd6412b"
   }
 ]
