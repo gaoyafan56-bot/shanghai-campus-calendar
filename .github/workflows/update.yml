@@ -26,14 +26,31 @@ jobs:
         run: |
           pip install -r requirements.txt
           python -m playwright install --with-deps chromium
+      - name: 校验时间解析、改期去重和历史保留
+        run: python -m unittest tests.py
       - name: 抓取13校并生成单文件页面
         id: scrape
         continue-on-error: true
         env:
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: python scrape.py
+      - name: 验证页面确由本轮数据生成
+        if: always() && (steps.scrape.outcome == 'success' || steps.scrape.outcome == 'failure')
+        env:
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          python - <<'PYCODE'
+          import json, pathlib, os, re
+          status=json.loads(pathlib.Path('data/status.json').read_text())
+          rows=json.loads(pathlib.Path('data/events.json').read_text())
+          html=pathlib.Path('index.html').read_text()
+          assert status['run_url']==os.environ['RUN_URL'], '未生成本轮快照，拒绝发布旧页面冒充更新'
+          assert json.loads(re.search(r'const EVENTS = (.*);\n',html)[1])==rows
+          assert status['total']==len(rows)
+          print('页面、数据库与本轮运行记录一致：',len(rows),'场')
+          PYCODE
       - name: 保存数据和页面（部分学校失败也保存其余结果）
-        if: always() && steps.scrape.outcome != 'skipped'
+        if: success() && (steps.scrape.outcome == 'success' || steps.scrape.outcome == 'failure')
         run: |
           test -s index.html
           test -s data/health.json
@@ -54,6 +71,17 @@ jobs:
           name: calendar-page
           path: public/
           retention-days: 7
+      - name: 保存来源与质量审计报告
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-audit
+          path: |
+            data/status.json
+            data/audit.json
+            data/health.json
+            data/retired-future.json
+          retention-days: 30
       - name: 标记来源失败以触发失败邮件
         if: steps.scrape.outcome == 'failure'
         run: |
