@@ -36,8 +36,9 @@ SOURCES = {
 }
 SPA = {'上海大学', '上海理工大学', '上海海洋大学', '上海对外经贸大学'}
 CAREER = {'上海交通大学', '华东师范大学', '上海财经大学'}
-HEADERS = {'User-Agent': 'Mozilla/5.0 (compatible; ShanghaiCampusCalendar/1.0)'}
+HEADERS = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Accept': '*/*'}
 
+END_DATES = {}
 
 def request(url, form=None):
     """超时与退避重试；不关闭 TLS 校验，不携带任何登录凭证。"""
@@ -65,7 +66,7 @@ def json_request(url, form=None):
 
 
 def date(value):
-    match = re.search(r'(20\d{2})[-/年](\d{1,2})[-/月](\d{1,2})', str(value or ''))
+    match = re.search(r'(20\d{2})[-/年](\d{1,2})[-/月](\d{1,2})', re.sub(r'\s+', '', str(value or '')))
     return dt.date(*map(int, match.groups())).isoformat() if match else ''
 
 
@@ -80,6 +81,7 @@ def event(school, day, start, end, title, venue, link, kind=''):
     if not day or not starts or not str(title or '').strip():
         raise ValueError('记录缺少明确的活动日期/开始时间/名称')
     title = BeautifulSoup(str(title), 'html.parser').get_text(' ', strip=True)
+    kind = {'XJH':'宣讲会','ZPH':'招聘会','xjh':'宣讲会','zph':'招聘会'}.get(kind,kind)
     if '双选' in title:
         kind = '双选会'
     elif '招聘会' in title:
@@ -94,7 +96,14 @@ def event(school, day, start, end, title, venue, link, kind=''):
     school_domain = '.'.join(urllib.parse.urlparse(SOURCES[school]).hostname.split('.')[-3:])
     if not (host == school_domain or host.endswith('.' + school_domain)):
         link = SOURCES[school]
-    return dict(d=day, start=starts[0], end=ends[0] if ends else (starts[1] if len(starts)>1 else ''),
+    finish = ends[0] if ends else (starts[1] if len(starts)>1 else '')
+    # 只有官网明确给出次日日期时，才保留早于开始时间的结束时刻。
+    if finish and finish <= starts[0] and not (date(end) and date(end) > day):
+        logging.warning('%s %s：官网结束时刻未晚于开始时刻，end留空待核验',school,title)
+        finish = ''
+    if finish and date(end) and date(end)>day:
+        END_DATES[school+'|'+link+'|'+day] = date(end)
+    return dict(d=day, start=starts[0], end=finish,
                 co=title, venue=venue or '官网未公布', school=school, type=kind, link=link)
 
 
@@ -268,6 +277,32 @@ def ecust():
         form = {i['name']:i.get('value','') for i in soup.select('input[type=hidden][name]')}
         form.update(__EVENTTARGET=target[1], __EVENTARGUMENT=target[2])
         html = request(url, form)
+    try:
+        result.extend(ecust_notices())
+    except Exception as exc:
+        logging.warning('华理招聘会公告补充来源失败：%s；已取得的宣讲会仍保留',exc)
+    return result
+
+
+def ecust_notices():
+    """补充公告栏中的招聘/双选会；只有明确举办日期和时刻才入日历。"""
+    origin='https://career.ecust.edu.cn'
+    url=origin+'/InformationNAVList.aspx?'+urllib.parse.urlencode({'type':'公告公示','subinfotypedm':'18'})
+    soup=BeautifulSoup(request(url),'html.parser')
+    links={urllib.parse.urljoin(origin,a['href']):a.get_text(' ',strip=True) for a in soup.select('a[href*="InformationDetail.aspx?XXID="]') if re.search('招聘会|双选会',a.get_text())}
+    result=[]
+    for link,title in links.items():
+        detail=BeautifulSoup(request(link),'html.parser')
+        content=detail.select_one('.inf0_list')
+        if not content:
+            continue
+        text=re.sub(r'\s+','',content.get_text(' ',strip=True))
+        match=re.search(r'(?:大会时间|会议时间|举办时间|活动时间)[：:]?((?:20\d{2})年\d{1,2}月\d{1,2}日.{0,25}?\d{1,2}[:：]\d{2}[-~～—－–]\d{1,2}[:：]\d{2})',text)
+        if not match:
+            logging.info('华理公告无明确逐场日期/时刻，不编造排期：%s',title)
+            continue
+        place=re.search(r'(?:大会地点|会议地点|举办地点|活动地点)[：:]?(.{1,90}?)(?=参会单位|参会人才|三、|3[、.]|$)',text)
+        result.append(event('华东理工大学',match[1],match[1],'',title,place[1] if place else '',link,'招聘会'))
     return result
 
 
@@ -369,9 +404,31 @@ def collect(school, today):
 
 
 def identity(e):
-    # 同一详情代表一场：改时间/地点时更新，而非重复旧版本。
-    # 列表回退无稳定ID，用学校+标题+日期+开始时间避免合并多场。
-    return (e['school'], e['link']) if e['link'] != SOURCES[e['school']] else (e['school'],e['co'],e['d'],e['start'])
+    # 官方详情ID+举办日，允许同一活动多日排期；当日改时间/地点时更新同一记录。
+    # 无逐场ID的公开列表回退记录，在完整刷新窗口中整体替换未结束场次。
+    link = e['link']
+    if e['link'] == SOURCES[e['school']]:
+        return (e['school'],e['co'],e['d'],e['start'])
+    return (e['school'],link,e['d'])
+
+
+def reconcile(old, fresh, successful, now):
+    """保留已结束历史；成功学校的当前/未来公开窗口以最新列表为准。
+    被最新列表撤下或改期的旧未来场次进入审计归档，不继续误显示，也不宣称已取消。
+    """
+    window = months(now.date())
+    end_month = dt.date.fromisoformat(window[-1]+'-01')
+    upper = end_month.replace(day=calendar.monthrange(end_month.year,end_month.month)[1]).isoformat()
+    old_map = {identity(e):e for e in old}
+    fresh_map = {identity(e):e for e in fresh}
+    retired = []
+    for key,e in list(old_map.items()):
+        upcoming = (e['d'],e['start']) >= (now.date().isoformat(),now.strftime('%H:%M'))
+        if e['school'] in successful and upcoming and e['d'] <= upper and key not in fresh_map:
+            retired.append(dict(record=e,reason='本轮完整公开列表未再列出，可能改期或撤下；不认定已取消',checked_at=now.isoformat()))
+            del old_map[key]
+    old_map.update(fresh_map)
+    return sorted(old_map.values(),key=lambda e:(e['d'],e['start'],e['school'],e['co'])),retired
 
 
 def public_error(exc):
@@ -382,6 +439,8 @@ def public_error(exc):
         return '官网要求登录或验证，本轮跳过。'
     if any(word in text for word in ('BrowserType', 'Timeout', 'timeout', 'Executable')):
         return '动态网页加载失败，本轮保留旧记录；详细原因见运行日志。'
+    if 'HTTP Error 403' in text:
+        return '官网对自动更新服务器返回403拒绝访问，沿用已核实记录；不代表本轮成功。'
     if 'urlopen' in text or 'HTTP Error' in text:
         return '官网连接失败，本轮保留旧记录；详细原因见运行日志。'
     return text[:160]
@@ -398,15 +457,15 @@ def main():
     old = json.loads(cache.read_text()) if cache.exists() else []
     supplement_path = ROOT/'data/supplements.json'
     supplements = json.loads(supplement_path.read_text()) if supplement_path.exists() else []
-    old.extend(supplements)
+    fallback_path = ROOT/'data/verified-fallback.json'
+    fallback = json.loads(fallback_path.read_text()) if fallback_path.exists() else {}
     statusfile = ROOT/'data/status.json'
     prior = json.loads(statusfile.read_text()) if statusfile.exists() else {}
     states = prior.get('schools', {})
     for e in old:
         if e['school'] == '东华大学':
             e['link'] = e['link'].replace('ejob.dhu.edu.cn/preaching.html','ejob.dhu.edu.cn/page/preaching.html').replace('ejob.dhu.edu.cn/recruitment.html','ejob.dhu.edu.cn/page/recruitment.html')
-    merged = {identity(e):e for e in old}
-    failed = []
+    fresh, successful = [],set()
     if not args.render_only:
         targets = [args.school] if args.school else list(SOURCES)
         with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
@@ -414,37 +473,54 @@ def main():
             for future in concurrent.futures.as_completed(jobs):
                 school = jobs[future]
                 try:
-                    fresh = future.result()
-                    for e in fresh:
-                        merged[identity(e)] = e
-                    states[school] = dict(ok=True,count=len(fresh),last_success=now.isoformat(),error='')
-                    logging.info('%s: %d 场', school, len(fresh))
+                    rows = future.result()
+                    if not isinstance(rows,list):
+                        raise ValueError('官网列表结果类型异常')
+                    for e in rows:
+                        assert set(e)=={'d','start','end','co','venue','school','type','link'}
+                        dt.date.fromisoformat(e['d'])
+                        assert e['school']==school
+                    fresh.extend(rows)
+                    successful.add(school)
+                    states[school] = dict(ok=True,count=len(rows),last_success=now.isoformat(),last_attempt=now.isoformat(),error='',month_counts={m:sum(e['d'].startswith(m) for e in rows) for m in months(now.date())})
+                    logging.info('%s: %d 场，本月 %d 场',school,len(rows),sum(e['d'].startswith(now.strftime('%Y-%m')) for e in rows))
                 except Exception as exc:
-                    failed.append(school)
-                    states[school] = dict(ok=False,count=0,last_success=states.get(school,{}).get('last_success'),error=public_error(exc))
-                    logging.error('%s: %s；保留旧数据',school,exc)
+                    verified = fallback.get('schools',{}).get(school,{})
+                    cached_rows = verified.get('events',[])
+                    fresh.extend(cached_rows)
+                    states[school] = dict(ok=False,count=0,last_success=states.get(school,{}).get('last_success'),last_attempt=now.isoformat(),error=public_error(exc),fallback_count=len(cached_rows),fallback_verified_at=verified.get('verified_at'))
+                    logging.error('%s: %s；保留历史及%d条独立核实缓存',school,exc,len(cached_rows))
+    # 补录优先级低于官网本轮更新，同一详情+举办日不重复。
+    records,retired = reconcile(old+supplements,fresh,successful,now) if not args.render_only else (sorted({identity(e):e for e in old+supplements}.values(),key=lambda e:(e['d'],e['start'],e['school'],e['co'])),[])
     for school in SOURCES:
-        states.setdefault(school, {})['supplement_count'] = sum(e['school']==school for e in supplements)
+        state=states.setdefault(school,{})
+        state['supplement_count']=sum(e['school']==school for e in supplements)
+        state['retained_count']=sum(e['school']==school for e in records)
+        state['current_month_count']=sum(e['school']==school and e['d'].startswith(now.strftime('%Y-%m')) for e in records)
+        state['coverage']='官方通知公告，不涵盖登录后或公众号排期' if school=='华东政法大学' else '官网公开列表与月历，非全校所有渠道的保证'
     failed = [school for school in SOURCES if not states.get(school,{}).get('ok')]
-    records = sorted(merged.values(),key=lambda e:(e['d'],e['start'],e['school'],e['co']))
-    status = dict(attempted_at=prior.get('attempted_at',now.isoformat()) if args.render_only else now.isoformat(),schools=states,sources=SOURCES,
-                  total=len(records),window=months(now.date()),run_url=__import__('os').environ.get('RUN_URL',''))
+    audit = dict(checked_at=now.isoformat(),before=len(old),after=len(records),current_month=now.strftime('%Y-%m'),current_month_before=sum(e['d'].startswith(now.strftime('%Y-%m')) for e in old),current_month_after=sum(e['d'].startswith(now.strftime('%Y-%m')) for e in records),retired_future_count=len(retired),failed=failed)
+    status = dict(attempted_at=prior.get('attempted_at',now.isoformat()) if args.render_only else now.isoformat(),schools=states,sources=SOURCES,total=len(records),window=months(now.date()),run_url=os.environ.get('RUN_URL',prior.get('run_url','')),current_month_count=audit['current_month_after'],end_dates={**prior.get('end_dates',{}),**END_DATES},coverage_note='只收录可核实的官方公开排期；源站改期、撤下或访问失败均会影响覆盖。')
     cache.parent.mkdir(exist_ok=True)
     cache.write_text(json.dumps(records,ensure_ascii=False,indent=2)+'\n')
     statusfile.write_text(json.dumps(status,ensure_ascii=False,indent=2)+'\n')
+    if not args.render_only:
+        (ROOT/'data/audit.json').write_text(json.dumps(audit,ensure_ascii=False,indent=2)+'\n')
+        retiredfile=ROOT/'data/retired-future.json'
+        previous=json.loads(retiredfile.read_text()) if retiredfile.exists() else []
+        retiredfile.write_text(json.dumps(previous+retired,ensure_ascii=False,indent=2)+'\n')
     template = (ROOT/'template.html').read_text()
     safe = lambda value: json.dumps(value,ensure_ascii=False).replace('<','\\u003c').replace('\u2028','\\u2028').replace('\u2029','\\u2029')
     (ROOT/'index.html').write_text(template.replace('__EVENTS__',safe(records)).replace('__STATUS__',safe(status)))
-    report = f'总计 {len(records)} 场；本轮失败 {len(failed)} 校：'+('、'.join(failed) or '无')
+    report=f'本月 {audit["current_month_after"]} 场（更新前 {audit["current_month_before"]}）；历史及现有共 {len(records)} 场；来源失败 {len(failed)} 校；旧未来排期移至审计归档 {len(retired)} 条'
     logging.info(report)
-    summary = __import__('os').environ.get('GITHUB_STEP_SUMMARY')
+    summary=os.environ.get('GITHUB_STEP_SUMMARY')
     if summary:
         with open(summary,'a') as f:
-            f.write(report+'\n\n|学校|状态|本轮条数|\n|---|---|---|\n')
-            for s in SOURCES:
-                v=states.get(s,{})
-                f.write(f'|{s}|{"成功" if v.get("ok") else "未更新"}|{v.get("count",0)}|\n')
-    # 先写入可用结果，工作流随后发布，再以失败状态触发 GitHub 邮件。
+            f.write(report+'\n\n|学校|自动检查|本轮数量|本月收录|最近成功|\n|---|---|---|---|---|\n')
+            for school in SOURCES:
+                v=states[school]
+                f.write(f'|{school}|{"成功" if v.get("ok") else "失败，沿用已核实缓存"}|{v.get("count",0)}|{v["current_month_count"]}|{v.get("last_success") or "尚未成功"}|\n')
     (ROOT/'data/health.json').write_text(json.dumps(dict(failed=failed),ensure_ascii=False)+'\n')
     return 1 if failed and not args.render_only else 0
 
