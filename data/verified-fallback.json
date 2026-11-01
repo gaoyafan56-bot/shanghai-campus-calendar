@@ -1,0 +1,76 @@
+{
+  "schools": {
+    "华东理工大学": {
+      "verified_at": "2026-11-01T09:58:52.835223+08:00",
+      "method": "独立访问学校官方公开网页，未使用登录信息；只缓存当前和未来排期",
+      "events": [
+        {
+          "d": "2026-11-12",
+          "start": "18:00",
+          "end": "21:00",
+          "co": "上海豫园珠宝时尚集团有限公司宣讲会",
+          "venue": "研究生楼507",
+          "school": "华东理工大学",
+          "type": "宣讲会",
+          "link": "https://career.ecust.edu.cn/student/RecruitmentDetail.aspx?id=24334"
+        },
+        {
+          "d": "2026-11-12",
+          "start": "18:00",
+          "end": "21:00",
+          "co": "浙江明日控股集团股份有限公司宣讲会",
+          "venue": "研究生楼505",
+          "school": "华东理工大学",
+          "type": "宣讲会",
+          "link": "https://career.ecust.edu.cn/student/RecruitmentDetail.aspx?id=24335"
+        },
+        {
+          "d": "2026-11-04",
+          "start": "16:00",
+          "end": "17:00",
+          "co": "深圳桃李未来教育集团有限公司宣讲会",
+          "venue": "线上",
+          "school": "华东理工大学",
+          "type": "宣讲会",
+          "link": "https://career.ecust.edu.cn/student/RecruitmentDetail.aspx?id=24333"
+        },
+        {
+          "d": "2026-11-04",
+          "start": "10:00",
+          "end": "12:00",
+          "co": "中化数智科技有限公司宣讲会",
+          "venue": "研究生楼505",
+          "school": "华东理工大学",
+          "type": "宣讲会",
+          "link": "https://career.ecust.edu.cn/student/RecruitmentDetail.aspx?id=24221"
+        },
+        {
+          "d": "2026-11-03",
+          "start": "19:00",
+          "end": "21:00",
+          "co": "厦门海辰储能科技股份有限公司宣讲会",
+          "venue": "研究生楼507",
+          "school": "华东理工大学",
+          "type": "宣讲会",
+          "link": "https://career.ecust.edu.cn/student/RecruitmentDetail.aspx?id=24274"
+        }
+      ]
+    },
+    "华东政法大学": {
+      "verified_at": "2026-11-01T09:58:52.836019+08:00",
+      "method": "独立访问学校官方公开网页，未使用登录信息；只缓存当前和未来排期",
+      "events": [
+        {
+          "d": "2026-11-04",
+          "start": "13:30",
+          "end": "15:30",
+          "co": "用人单位邀请函 | 华东政法大学2027届毕业生秋季校园综合招聘会（第二场）",
+          "venue": "松江校区富田体育馆（龙源路 555 号）",
+          "school": "华东政法大学",
+          "type": "招聘会",
+          "link": "https://jy.ecupl.edu.cn/2026/0930/c16921a228180/page.htm"
+        }
+      ]
+    }
+  }
+}
