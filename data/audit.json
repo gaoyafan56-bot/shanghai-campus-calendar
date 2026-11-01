@@ -1,0 +1,12 @@
+{
+  "checked_at": "2026-11-01T10:04:50.371614+08:00",
+  "before": 2898,
+  "after": 3018,
+  "current_month": "2026-11",
+  "current_month_before": 57,
+  "current_month_after": 133,
+  "retired_future_count": 2,
+  "failed": [
+    "华东政法大学"
+  ]
+}
