@@ -1,79 +1,79 @@
 {
-  "attempted_at": "2026-11-01T10:04:50.371614+08:00",
+  "attempted_at": "2026-11-02T13:12:54.273433+08:00",
   "schools": {
     "华东师范大学": {
       "ok": true,
-      "count": 92,
-      "last_success": "2026-11-01T10:04:50.371614+08:00",
-      "last_attempt": "2026-11-01T10:04:50.371614+08:00",
+      "count": 93,
+      "last_success": "2026-11-02T13:12:54.273433+08:00",
+      "last_attempt": "2026-11-02T13:12:54.273433+08:00",
       "error": "",
       "month_counts": {
         "2026-10": 81,
-        "2026-11": 11,
+        "2026-11": 12,
         "2026-12": 0,
         "2027-01": 0
       },
       "supplement_count": 0,
-      "retained_count": 146,
-      "current_month_count": 11,
+      "retained_count": 147,
+      "current_month_count": 12,
       "coverage": "官网公开列表与月历，非全校所有渠道的保证"
     },
     "华东理工大学": {
       "ok": true,
       "count": 151,
-      "last_success": "2026-11-01T10:04:50.371614+08:00",
-      "last_attempt": "2026-11-01T10:04:50.371614+08:00",
+      "last_success": "2026-11-02T13:12:54.273433+08:00",
+      "last_attempt": "2026-11-02T13:12:54.273433+08:00",
       "error": "",
       "month_counts": {
         "2026-10": 126,
-        "2026-11": 5,
+        "2026-11": 6,
         "2026-12": 0,
         "2027-01": 0
       },
       "supplement_count": 0,
-      "retained_count": 241,
-      "current_month_count": 5,
+      "retained_count": 242,
+      "current_month_count": 6,
       "coverage": "官网公开列表与月历，非全校所有渠道的保证"
     },
     "同济大学": {
       "ok": true,
-      "count": 353,
-      "last_success": "2026-11-01T10:04:50.371614+08:00",
-      "last_attempt": "2026-11-01T10:04:50.371614+08:00",
+      "count": 354,
+      "last_success": "2026-11-02T13:12:54.273433+08:00",
+      "last_attempt": "2026-11-02T13:12:54.273433+08:00",
       "error": "",
       "month_counts": {
         "2026-10": 188,
-        "2026-11": 18,
+        "2026-11": 19,
         "2026-12": 1,
         "2027-01": 0
       },
       "supplement_count": 0,
-      "retained_count": 384,
-      "current_month_count": 18,
+      "retained_count": 385,
+      "current_month_count": 19,
       "coverage": "官网公开列表与月历，非全校所有渠道的保证"
     },
     "上海交通大学": {
       "ok": true,
-      "count": 209,
-      "last_success": "2026-11-01T10:04:50.371614+08:00",
-      "last_attempt": "2026-11-01T10:04:50.371614+08:00",
+      "count": 211,
+      "last_success": "2026-11-02T13:12:54.273433+08:00",
+      "last_attempt": "2026-11-02T13:12:54.273433+08:00",
       "error": "",
       "month_counts": {
         "2026-10": 182,
-        "2026-11": 27,
+        "2026-11": 29,
         "2026-12": 0,
         "2027-01": 0
       },
       "supplement_count": 0,
-      "retained_count": 338,
-      "current_month_count": 27,
+      "retained_count": 340,
+      "current_month_count": 29,
       "coverage": "官网公开列表与月历，非全校所有渠道的保证"
     },
     "东华大学": {
       "ok": true,
       "count": 191,
-      "last_success": "2026-11-01T10:04:50.371614+08:00",
-      "last_attempt": "2026-11-01T10:04:50.371614+08:00",
+      "last_success": "2026-11-02T13:12:54.273433+08:00",
+      "last_attempt": "2026-11-02T13:12:54.273433+08:00",
       "error": "",
       "month_counts": {
         "2026-10": 103,
@@ -88,26 +88,26 @@
     },
     "上海大学": {
       "ok": true,
-      "count": 124,
-      "last_success": "2026-11-01T10:04:50.371614+08:00",
-      "last_attempt": "2026-11-01T10:04:50.371614+08:00",
+      "count": 125,
+      "last_success": "2026-11-02T13:12:54.273433+08:00",
+      "last_attempt": "2026-11-02T13:12:54.273433+08:00",
       "error": "",
       "month_counts": {
         "2026-10": 107,
-        "2026-11": 17,
+        "2026-11": 18,
         "2026-12": 0,
         "2027-01": 0
       },
       "supplement_count": 0,
-      "retained_count": 189,
-      "current_month_count": 17,
+      "retained_count": 190,
+      "current_month_count": 18,
       "coverage": "官网公开列表与月历，非全校所有渠道的保证"
     },
     "上海理工大学": {
       "ok": true,
       "count": 53,
-      "last_success": "2026-11-01T10:04:50.371614+08:00",
-      "last_attempt": "2026-11-01T10:04:50.371614+08:00",
+      "last_success": "2026-11-02T13:12:54.273433+08:00",
+      "last_attempt": "2026-11-02T13:12:54.273433+08:00",
       "error": "",
       "month_counts": {
         "2026-10": 47,
@@ -123,8 +123,8 @@
     "上海海洋大学": {
       "ok": true,
       "count": 12,
-      "last_success": "2026-11-01T10:04:50.371614+08:00",
-      "last_attempt": "2026-11-01T10:04:50.371614+08:00",
+      "last_success": "2026-11-02T13:12:54.273433+08:00",
+      "last_attempt": "2026-11-02T13:12:54.273433+08:00",
       "error": "",
       "month_counts": {
         "2026-10": 10,
@@ -140,8 +140,8 @@
     "上海对外经贸大学": {
       "ok": true,
       "count": 16,
-      "last_success": "2026-11-01T10:04:50.371614+08:00",
-      "last_attempt": "2026-11-01T10:04:50.371614+08:00",
+      "last_success": "2026-11-02T13:12:54.273433+08:00",
+      "last_attempt": "2026-11-02T13:12:54.273433+08:00",
       "error": "",
       "month_counts": {
         "2026-10": 16,
@@ -157,8 +157,8 @@
     "上海电力大学": {
       "ok": true,
       "count": 114,
-      "last_success": "2026-11-01T10:04:50.371614+08:00",
-      "last_attempt": "2026-11-01T10:04:50.371614+08:00",
+      "last_success": "2026-11-02T13:12:54.273433+08:00",
+      "last_attempt": "2026-11-02T13:12:54.273433+08:00",
       "error": "",
       "month_counts": {
         "2026-10": 71,
@@ -174,8 +174,8 @@
     "上海财经大学": {
       "ok": true,
       "count": 70,
-      "last_success": "2026-11-01T10:04:50.371614+08:00",
-      "last_attempt": "2026-11-01T10:04:50.371614+08:00",
+      "last_success": "2026-11-02T13:12:54.273433+08:00",
+      "last_attempt": "2026-11-02T13:12:54.273433+08:00",
       "error": "",
       "month_counts": {
         "2026-10": 59,
@@ -192,7 +192,7 @@
       "ok": false,
       "count": 0,
       "last_success": null,
-      "last_attempt": "2026-11-01T10:04:50.371614+08:00",
+      "last_attempt": "2026-11-02T13:12:54.273433+08:00",
       "error": "官网对自动更新服务器返回403拒绝访问，沿用已核实记录；不代表本轮成功。",
       "fallback_count": 1,
       "fallback_verified_at": "2026-11-01T09:58:52.836019+08:00",
@@ -203,19 +203,19 @@
     },
     "上海外国语大学": {
       "ok": true,
-      "count": 1117,
-      "last_success": "2026-11-01T10:04:50.371614+08:00",
-      "last_attempt": "2026-11-01T10:04:50.371614+08:00",
+      "count": 1118,
+      "last_success": "2026-11-02T13:12:54.273433+08:00",
+      "last_attempt": "2026-11-02T13:12:54.273433+08:00",
       "error": "",
       "month_counts": {
         "2026-10": 35,
-        "2026-11": 3,
+        "2026-11": 4,
         "2026-12": 0,
         "2027-01": 0
       },
       "supplement_count": 0,
-      "retained_count": 1118,
-      "current_month_count": 3,
+      "retained_count": 1119,
+      "current_month_count": 4,
       "coverage": "官网公开列表与月历，非全校所有渠道的保证"
     }
   },
@@ -234,15 +234,15 @@
     "上海对外经贸大学": "https://job.suibe.edu.cn/home/recruit-info/xjh-list",
     "上海电力大学": "https://career.shiep.edu.cn/teachin"
   },
-  "total": 3018,
+  "total": 3025,
   "window": [
     "2026-10",
     "2026-11",
     "2026-12",
     "2027-01"
   ],
-  "run_url": "https://github.com/gaoyafan56-bot/shanghai-campus-calendar/actions/runs/41263627257",
-  "current_month_count": 133,
+  "run_url": "https://github.com/gaoyafan56-bot/shanghai-campus-calendar/actions/runs/41392646632",
+  "current_month_count": 140,
   "end_dates": {
     "华东师范大学|https://career.ecnu.edu.cn/career/zphxx/view/250961508111093760|2026-10-27": "2026-10-28",
     "同济大学|https://tj91.tongji.edu.cn/f/recruitmentFair/show?recruitmentFairId=588c0fccc319473c9b4e4aff736b059c|2026-09-21": "2026-10-08",
