@@ -40,5 +40,47 @@
     },
     "reason": "本轮完整公开列表未再列出，可能改期或撤下；不认定已取消",
     "checked_at": "2026-11-02T13:12:54.273433+08:00"
+  },
+  {
+    "record": {
+      "d": "2026-11-17",
+      "start": "14:30",
+      "end": "16:30",
+      "co": "厦门翔业集团有限公司",
+      "venue": "四平校区-经纬楼一楼多功能厅",
+      "school": "同济大学",
+      "type": "宣讲会",
+      "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=c9zl5w1i-8v3k-usvi-bpvi-97a2nyepea9n;xjhbh=8cdcbc26b8d24351b5f348e401e3d4a0#/xjhxq"
+    },
+    "reason": "本轮完整公开列表未再列出，可能改期或撤下；不认定已取消",
+    "checked_at": "2026-11-16T13:38:42.034237+08:00"
+  },
+  {
+    "record": {
+      "d": "2026-11-17",
+      "start": "18:30",
+      "end": "20:30",
+      "co": "CIDER 2027校园招聘｜时尚外企等你来",
+      "venue": "1教102",
+      "school": "东华大学",
+      "type": "宣讲会",
+      "link": "https://ejob.dhu.edu.cn/page/preaching.html?wid=185f05ae6d1c4a418703878f65e1c9c8"
+    },
+    "reason": "本轮完整公开列表未再列出，可能改期或撤下；不认定已取消",
+    "checked_at": "2026-11-16T13:38:42.034237+08:00"
+  },
+  {
+    "record": {
+      "d": "2026-11-19",
+      "start": "14:30",
+      "end": "16:30",
+      "co": "江苏燕龙科技股份有限公司",
+      "venue": "嘉定校区-济人楼210",
+      "school": "同济大学",
+      "type": "宣讲会",
+      "link": "https://tjjyzx.tongji.edu.cn/jyfw/sys/jypubapp/*default/index.do?type=xjhxq;dwdm=1736fa6cbbc64c76b00bbe7507137e29;xjhbh=bd7d642bea8e44b694472ac7331c3974#/xjhxq"
+    },
+    "reason": "本轮完整公开列表未再列出，可能改期或撤下；不认定已取消",
+    "checked_at": "2026-11-16T13:38:42.034237+08:00"
   }
 ]

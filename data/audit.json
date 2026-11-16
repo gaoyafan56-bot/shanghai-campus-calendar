@@ -1,13 +1,12 @@
 {
-  "checked_at": "2026-11-09T13:28:52.139122+08:00",
-  "before": 3025,
-  "after": 3092,
+  "checked_at": "2026-11-16T13:38:42.034237+08:00",
+  "before": 3092,
+  "after": 3146,
   "current_month": "2026-11",
-  "current_month_before": 140,
-  "current_month_after": 206,
-  "retired_future_count": 0,
+  "current_month_before": 206,
+  "current_month_after": 259,
+  "retired_future_count": 3,
   "failed": [
-    "华东理工大学",
     "华东政法大学"
   ]
 }
